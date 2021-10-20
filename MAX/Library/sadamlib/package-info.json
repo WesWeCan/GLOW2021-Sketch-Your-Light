@@ -1,0 +1,32 @@
+{
+  "author" : "Ádám Siska",
+  "description" : "Tools for raw networking (TCP/UDP), data handling (XMLs, compression etc), maths (interpolation, number theory etc) and more!",
+  "max_version_min" : "7.0.1",
+  "max_version_max" : "none",
+  "name" : "The sadam Library",
+  "os" : {
+    "macintosh" : {
+      "platform" : [ "ia32", "x64" ],
+      "min_version" : "10.7"
+    },
+    "windows" : {
+      "platform" : [ "ia32", "x64" ],
+      "min_version" : "7"
+    }
+  },
+  "homepatcher" : "The sadam Library.maxpat",
+  "package_extra" : {
+    "reverse_domain" : "hu.sadam",
+    "copyright" : "Copyright (c) 2020 Ádám Siska"
+  },
+  "tags" : [ ],
+  "version" : "20200307",
+  "website" : "http://www.sadam.hu/",
+  "filelist" : {
+    "externals" : [ "sadam.base64.mxo", "sadam.canvas.mxo", "sadam.empty.mxo", "sadam.envelopeGenerator.mxo", "sadam.float.mxo", "sadam.fromBytes.mxo", "sadam.gcd.mxo", "sadam.interpol.mxo", "sadam.lcm.mxo", "sadam.limits.mxo", "sadam.lzo.mxo", "sadam.mutex.mxo", "sadam.normalize~.mxo", "sadam.onebang.mxo", "sadam.phasor~.mxo", "sadam.prime.mxo", "sadam.rand~.mxo", "sadam.rapidXML.mxo", "sadam.sgn~.mxo", "sadam.sortLists.mxo", "sadam.split.mxo", "sadam.standardMap~.mxo", "sadam.stat.mxo", "sadam.stream.mxo", "sadam.tcpClient.mxo", "sadam.tcpReceiver.mxo", "sadam.tcpSender.mxo", "sadam.tcpServer.mxo", "sadam.toBytes.mxo", "sadam.udpClient.mxo", "sadam.udpReceiver.mxo", "sadam.udpSender.mxo", "sadam.base64.mxe", "sadam.canvas.mxe", "sadam.empty.mxe", "sadam.envelopeGenerator.mxe", "sadam.float.mxe", "sadam.fromBytes.mxe", "sadam.gcd.mxe", "sadam.interpol.mxe", "sadam.lcm.mxe", "sadam.limits.mxe", "sadam.lzo.mxe", "sadam.mutex.mxe", "sadam.normalize~.mxe", "sadam.onebang.mxe", "sadam.phasor~.mxe", "sadam.prime.mxe", "sadam.rand~.mxe", "sadam.rapidXML.mxe", "sadam.sgn~.mxe", "sadam.sortLists.mxe", "sadam.split.mxe", "sadam.standardMap~.mxe", "sadam.stat.mxe", "sadam.stream.mxe", "sadam.tcpClient.mxe", "sadam.tcpReceiver.mxe", "sadam.tcpSender.mxe", "sadam.tcpServer.mxe", "sadam.toBytes.mxe", "sadam.udpClient.mxe", "sadam.udpReceiver.mxe", "sadam.udpSender.mxe", "sadam.base64.mxe64", "sadam.canvas.mxe64", "sadam.empty.mxe64", "sadam.envelopeGenerator.mxe64", "sadam.float.mxe64", "sadam.fromBytes.mxe64", "sadam.gcd.mxe64", "sadam.interpol.mxe64", "sadam.lcm.mxe64", "sadam.limits.mxe64", "sadam.lzo.mxe64", "sadam.mutex.mxe64", "sadam.normalize~.mxe64", "sadam.onebang.mxe64", "sadam.phasor~.mxe64", "sadam.prime.mxe64", "sadam.rand~.mxe64", "sadam.rapidXML.mxe64", "sadam.sgn~.mxe64", "sadam.sortLists.mxe64", "sadam.split.mxe64", "sadam.standardMap~.mxe64", "sadam.stat.mxe64", "sadam.stream.mxe64", "sadam.tcpClient.mxe64", "sadam.tcpReceiver.mxe64", "sadam.tcpSender.mxe64", "sadam.tcpServer.mxe64", "sadam.toBytes.mxe64", "sadam.udpClient.mxe64", "sadam.udpReceiver.mxe64", "sadam.udpSender.mxe64" ],
+    "java-classes" : [ "lib/sadamLib.jar" ],
+    "help" : [ "sadam.base64.maxhelp", "sadam.canvas.maxhelp", "sadam.dom.maxhelp", "sadam.empty.maxhelp", "sadam.envelopeGenerator.maxhelp", "sadam.float.maxhelp", "sadam.fromBytes.maxhelp", "sadam.gcd.maxhelp", "sadam.interpol.maxhelp", "sadam.lcm.maxhelp", "sadam.limits.maxhelp", "sadam.lzo.maxhelp", "sadam.mutex.maxhelp", "sadam.normalize~.maxhelp", "sadam.onebang.maxhelp", "sadam.phasor~.maxhelp", "sadam.prime.maxhelp", "sadam.rand~.maxhelp", "sadam.rapidXML.maxhelp", "sadam.sax.maxhelp", "sadam.sgn~.maxhelp", "sadam.sortLists.maxhelp", "sadam.split.maxhelp", "sadam.standardMap~.maxhelp", "sadam.stat.maxhelp", "sadam.stream.maxhelp", "sadam.tcpClient.maxhelp", "sadam.tcpReceiver.maxhelp", "sadam.tcpSender.maxhelp", "sadam.tcpServer.maxhelp", "sadam.toBytes.maxhelp", "sadam.udpClient.maxhelp", "sadam.udpReceiver.maxhelp", "sadam.udpSender.maxhelp" ],
+    "docs" : [ "sadam.base64.maxref.xml", "sadam.base64.png", "sadam.canvas.maxref.xml", "sadam.canvas.png", "sadam.dom.maxref.xml", "sadam.dom.png", "sadam.empty.maxref.xml", "sadam.empty.png", "sadam.envelopeGenerator.maxref.xml", "sadam.envelopeGenerator.png", "sadam.float.maxref.xml", "sadam.float.png", "sadam.fromBytes.maxref.xml", "sadam.fromBytes.png", "sadam.gcd.maxref.xml", "sadam.gcd.png", "sadam.interpol.maxref.xml", "sadam.interpol.png", "sadam.lcm.maxref.xml", "sadam.lcm.png", "sadam.limits.maxref.xml", "sadam.limits.png", "sadam.lzo.maxref.xml", "sadam.lzo.png", "sadam.mutex.maxref.xml", "sadam.mutex.png", "sadam.normalize~.maxref.xml", "sadam.normalize~.png", "sadam.onebang.maxref.xml", "sadam.onebang.png", "sadam.phasor~.maxref.xml", "sadam.phasor~.png", "sadam.prime.maxref.xml", "sadam.prime.png", "sadam.rand~.maxref.xml", "sadam.rand~.png", "sadam.rapidXML.maxref.xml", "sadam.rapidXML.png", "sadam.sax.maxref.xml", "sadam.sax.png", "sadam.sgn~.maxref.xml", "sadam.sgn~.png", "sadam.sortLists.maxref.xml", "sadam.sortLists.png", "sadam.split.maxref.xml", "sadam.split.png", "sadam.standardMap~.maxref.xml", "sadam.standardMap~.png", "sadam.stat.maxref.xml", "sadam.stat.png", "sadam.stream.maxref.xml", "sadam.stream.png", "sadam.tcpClient.maxref.xml", "sadam.tcpClient.png", "sadam.tcpReceiver.maxref.xml", "sadam.tcpReceiver.png", "sadam.tcpSender.maxref.xml", "sadam.tcpSender.png", "sadam.tcpServer.maxref.xml", "sadam.tcpServer.png", "sadam.toBytes.maxref.xml", "sadam.toBytes.png", "sadam.udpClient.maxref.xml", "sadam.udpClient.png", "sadam.udpReceiver.maxref.xml", "sadam.udpReceiver.png", "sadam.udpSender.maxref.xml", "sadam.udpSender.png" ],
+    "extras" : [ "The sadam Library.maxpat" ]
+  }
+}
