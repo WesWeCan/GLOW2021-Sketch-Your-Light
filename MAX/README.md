@@ -1,3 +1,3 @@
-TODO
+# Installation
 
-change 1
+Install MAX 8 from internet.
