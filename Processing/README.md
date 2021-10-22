@@ -27,10 +27,13 @@ Don't forget to reboot!
 
 
 
-# Install processing
+# Install processing (3.5.3)
 
 Clone this repo via
 `git clone https://github.com/WesWeCan/GLOW2021-Sketch-Your-Light.git`
+
+* Open a new `terminal`
+* Run `sudo apt-get install libusb-1.0-0 libusb-1.0-0-dev freenect -y`
 
 * Go to the folder `processing` 
 * Go to the folder `installation`
@@ -38,17 +41,17 @@ Clone this repo via
 * Navigate to the `processing-3.5.3` folder
 * Open new command prompt in folder via `tools->open current folder in terminal`
 * run `sudo sh install.sh`
+* Run Processing via `Applications -> programming -> Processing IDE`
+* Close Processing (the folder `sketchbook` is now created)
 * copy all libraries from the `Processing Libraries` (EXCEPT openkinect_processing) to `/home/pi/sketchbook/libraries`
 * close processing
-* Open a new `terminal`
-* Run `sudo apt-get install libusb-1.0-0 libusb-1.0-0-dev freenect`
 * Reboot `sudo reboot now`
 
 * Run `GLOW_Kinect.pde`  in the `GLOW_Kinect` folder.
   * It can happen that the kinect is not detected the first time.
   * Stop and re-run the sketch.
 
-
+This program does not work on Processing 4
 
 <!-- 
 
