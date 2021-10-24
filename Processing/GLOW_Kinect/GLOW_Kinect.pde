@@ -7,6 +7,7 @@ Arduino light?
 
 import java.awt.*;
 
+
 int PlatformID = 1;
 
 void setup() {
@@ -16,6 +17,7 @@ void setup() {
     exit();
   }
   
+  initSerial();
   initUDP(); 
 }
 

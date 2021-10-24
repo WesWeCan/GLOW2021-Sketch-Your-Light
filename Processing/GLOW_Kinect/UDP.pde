@@ -22,7 +22,7 @@ void sendData(PVector pos) {
       (int)map(pos.x, 0, 640, 0, 100) + ":" +
       (int)map(pos.y , 0, 480, 0, 100) + ":" +
       (int)pos.z + ":" +
-      0;
+      (int)platformValue;
   
   println(message);
 
