@@ -11,13 +11,15 @@ import java.awt.*;
 int PlatformID = 1;
 
 void setup() {
-  size(1280, 480);
+  size(640, 480);
   
   if(!initKinect()){
     exit();
   }
   
-  initSerial();
+  
+  
+  //initSerial();
   initUDP(); 
 }
 

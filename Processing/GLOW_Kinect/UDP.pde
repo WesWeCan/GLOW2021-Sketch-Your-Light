@@ -2,8 +2,8 @@
 import hypermedia.net.*;
 
 int port = 54321;
-//String ip = "131.155.46.154";
-String ip = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
+String ip = "192.168.4.188";
+//String ip = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
 
 UDP udp;  // define the UDP object
 

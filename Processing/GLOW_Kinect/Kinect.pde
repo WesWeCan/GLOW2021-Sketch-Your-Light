@@ -10,10 +10,14 @@ PImage depthImg;
 
 // Which pixels range do we care about?
 int minDepth =  60;
-int maxDepth = 860;
+int maxDepth = 960;
 
+float prevZ = -1;
 
-int threshold = 875;
+int threshold = 905;
+
+int counter = 0;
+float[] counts = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 // What is the kinect's physical angle
 float angle;
@@ -25,44 +29,45 @@ boolean initKinect() {
   kinect = new Kinect(this);
   kinect.initDepth();
   angle = kinect.getTilt();
-
+  
   // Blank image
   depthImg = new PImage(kinect.width, kinect.height);
   fingers = new FingerTracker(this, 640, 480);
 
   println("Number of Kinect devices: " + kinect.numDevices());
 
+  kinect.enableColorDepth(false);
+
   if (kinect.numDevices() < 1) {
     return false;
-  }
-  else {
-    return true; 
+  } else {
+    return true;
   }
 }
 
 
 PVector getHandPosition() {
-  
+
   // Draw the raw image
   image(kinect.getDepthImage(), 0, 0);
-  
+
   // Set the max threshold of finger detection
   fingers.setThreshold(threshold);
 
   // Update the fingertracker with the raw depth data
   int[] depthMap = kinect.getRawDepth();
-  fingers.update(depthMap);
 
   // Threshold the depth image
   // This is to generate the right image, what is the kinect picking up between the min and max
-  int[] rawDepth = kinect.getRawDepth();
-  for (int i=0; i < rawDepth.length; i++) {
-    if (rawDepth[i] >= minDepth && rawDepth[i] <= maxDepth) {
+  for (int i=0; i < depthMap.length; i++) {
+    if (depthMap[i] >= minDepth && depthMap[i] <= maxDepth) {
       depthImg.pixels[i] = color(255);
     } else {
       depthImg.pixels[i] = color(0);
     }
   }
+
+  fingers.update(depthMap);
 
   // Draw the controus of every finger
   int numcontours = fingers.fc.getNumContours();
@@ -77,38 +82,106 @@ PVector getHandPosition() {
   int sumX = 0;
   int sumY = 0;
 
-  
+
+  int exclusion = 100;
+  line(exclusion, 0, exclusion, height);
+  line(kinect.width-exclusion, 0, kinect.width-exclusion, height);
+  line(0, exclusion, width, exclusion);
+  line(0, kinect.height-exclusion, width, kinect.height-exclusion);
+
+  ArrayList<PVector> dots = new ArrayList<PVector>();
+
   for (int i = 0; i < numFingers; i++) {
     int x = (int)fingers.getFingerX(i);
     int y = (int)fingers.getFingerY(i);
-    
-    // Red circle on top of every detected finger
-    // -5 to account for IR image shift
-    fill(255, 0, 0);
-    ellipse(x-5, y -5, 10, 10);
 
-    sumX += x;
-    sumY += y;
+    if (x < exclusion || x > kinect.width-exclusion) {
+      continue;
+    }
+    
+    if(y < exclusion || y > kinect.height-exclusion){
+     continue; 
+    }
+
+    dots.add(new PVector(x, y));
+
+    //if(x > exclusion || x < kinect.width-exclusion){
+    //  continue;
+    //}
+
+    //// Red circle on top of every detected finger
+    //// -5 to account for IR image shift
+    //fill(255, 0, 0);
+    //ellipse(x-5, y -5, 10, 10);
+
+    
+  }
+
+
+  for (PVector dot : dots) {
+    fill(255, 0, 0);
+    //ellipse(dot.x-5, dot.y -5, 10, 10);
+    
+    sumX += dot.x;
+    sumY += dot.y;
   }
 
   
-  if (numFingers > 0) {
+  
+
+
+  if (dots.size() > 0) {
     // Create new vector from average position
-    PVector ap = new PVector(sumX/numFingers, sumY/numFingers);
+   
+    PVector ap = new PVector(sumX/dots.size(), sumY/dots.size());
 
     // Interpolating the location, doing it arbitrarily for now
     lerpedPos.x = PApplet.lerp(lerpedPos.x, ap.x, 0.3f);
-    lerpedPos.y = PApplet.lerp(lerpedPos.y, ap.y, 0.3f);
+    lerpedPos.y = PApplet.lerp(lerpedPos.y, ap.y, 0.3f) +6;
 
     // Depth of the pixel of the position
     int zPixel = int(lerpedPos.y * 640.0 + lerpedPos.x);
 
     // TODO: Prevent out of Bounds
-    lerpedPos.z = rawDepth[zPixel];
-
-    fill(0, 0, 255);
-    ellipse(lerpedPos.x, lerpedPos.y, 10, 10);
+    //lerpedPos.z = depthMap[zPixel];
+    //float temp = (kinect.getRawDepth()[zPixel]);
+    loadPixels();
+    float temp = (pixels[zPixel]);
     
+    color c = get((int)lerpedPos.x, (int)lerpedPos.y);
+    //println(brightness(c));
+    lerpedPos.z = brightness(c);
+    
+    
+    //if(temp > 0 && temp < 1000){
+    //  lerpedPos.z = temp;
+    //  //lerpedPos.z = pixels[];
+      
+    //  //counts[counter] = temp;
+    //  //counter++;
+      
+      
+    //  //if(counter >= counts.length){
+    //  // counter = 0; 
+       
+    //  // lerpedPos.z = min(counts);
+       
+    //  //}
+    //}
+    //else {
+    //  lerpedPos.z = prevZ;
+    //}
+    
+    prevZ = lerpedPos.z;
+    //lerpedPos.z = map(lerpedPos.z, 600, 2047, 0, 100);
+    
+
+  
+  
+    
+    fill(0, 0, 255);
+    //ellipse(lerpedPos.x, lerpedPos.y, 10, 10);
+
     return lerpedPos;
   } else {
     lerpedPos = new PVector(-1, -1, -1);
