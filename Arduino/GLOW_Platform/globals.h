@@ -5,7 +5,7 @@ int selectedPixel = 0;
 
 
 // Distance Sensor
-const int pingPin = 9; // Trigger Pin of Ultrasonic Sensor
+const int pingPin = 12; // Trigger Pin of Ultrasonic Sensor
 const int echoPin = 8; // Echo Pin of Ultrasonic Sensor
 
 const int maxDistance = 87;
@@ -16,7 +16,7 @@ const int maxDistance = 87;
 #include <Adafruit_NeoPixel.h>
 
 #define PIN        6 // On Trinket or Gemma, suggest changing this to 1
-#define NUMPIXELS 60 // Popular NeoPixel ring size
+#define NUMPIXELS 52 // Popular NeoPixel ring size
 
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
