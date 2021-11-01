@@ -1,5 +1,5 @@
 // Control
-bool debug = false;
+bool debug = true;
 int lastSelectedPixel = 0;
 int selectedPixel = 0;
 
@@ -11,9 +11,9 @@ const int echoPin = 8; // Echo Pin of Ultrasonic Sensor
 // Parking sensor
 const int pingPinReset = 3; // Trigger pin of parking sensor
 const int echoPinReset = 7; // Echo pin of parking sensor
-int Reset = 0; // 0 if there is no reset activated, 1 if reset is activated
+int reset = 0; // 0 if there is no reset activated, 1 if reset is activated
 
-const int maxDistance = 87;
+const int maxDistance = 80;
 
 
 
@@ -31,9 +31,9 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 // Calculate the start and stops of of the feet.
 // All is calculated in pixels!
 
-const int coldPercent = 25;
-const int warmPercent = 25;
-const int rgbPercent = 50;
+const int coldPercent = 20;
+const int warmPercent = 20;
+const int rgbPercent = 60;
 
 const int coldStart = 0;
 const int coldEnd = map(coldPercent, 0, 100, 0, NUMPIXELS);

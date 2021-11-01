@@ -1,21 +1,14 @@
 // https://www.arduinoslovakia.eu/blog/2018/4/neopixel-ring-hsv-test?lang=en
 
-
-
 #include "globals.h"
 #include "leds.h";
 #include "distance.h";
 
-
-
 void setup() {
-
   initLed();
 
   Serial.begin(115200); // Starting Serial Terminal
   //  pixels.setBrightness(50);
-
-  
 }
 
 
@@ -26,11 +19,13 @@ void loop() {
   // Real distance of the foot in relation towards the sensor
   float footDistance = readUltraSonic();
 
+  int parkingDistance = readReset();
+
   // Determine if reset is activated
-  if (readReset < 100) {
-    Reset = 1;
+  if (parkingDistance < 100 && parkingDistance > 20) {
+    reset = 1;
   } else {
-    Reset = 0;  
+    reset = 0;
   }
 
   // mapping only if in range!
@@ -41,6 +36,9 @@ void loop() {
   if (debug) {
     Serial.print("FootDistance: ");
     Serial.println(footDistance);
+
+    Serial.print("parkingDistance: ");
+    Serial.println(parkingDistance);
 
     Serial.print("selectedPixel: ");
     Serial.println(selectedPixel);
@@ -62,11 +60,10 @@ void loop() {
   }
   else {
     sendDataToProcessing('c', calculateValue());
-    sendDataToProcessing('r', Reset);
   }
 
 
-  if (debug){
+  if (debug) {
     Serial.println();
   }
 
@@ -74,16 +71,18 @@ void loop() {
 }
 
 
-int calculateValue(){
+int calculateValue() {
 
-  if(inRange(lastSelectedPixel, coldStart, coldEnd)){
+  if (inRange(lastSelectedPixel, coldStart, coldEnd)) {
     return 400;
-  } else if(inRange(lastSelectedPixel, warmStart, warmEnd)){
-    return 500;  
+  } else if (inRange(lastSelectedPixel, warmStart, warmEnd)) {
+    return 500;
+  } else if (reset) {
+    return 600;
   } else {
     return constrain(map(lastSelectedPixel, rgbStart, rgbEnd, 0, 360), 0, 360);
   }
-  
+
 }
 
 // From https://github.com/howieliang/Weka4P

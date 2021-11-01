@@ -1,8 +1,8 @@
 /*
-TODO
-Input txt
-Record data
-Arduino light?
+
+GLOW Sketch Your Light
+Kinect and Arduino software Brdige
+
 */
 
 import java.awt.*;
@@ -17,9 +17,7 @@ void setup() {
     exit();
   }
   
-  
-  
-  //initSerial();
+  initSerial();
   initUDP(); 
 }
 
