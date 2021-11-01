@@ -20,9 +20,9 @@ void loop() {
   float footDistance = readUltraSonic();
 
   int parkingDistance = readReset();
-
+  
   // Determine if reset is activated
-  if (parkingDistance < 100 && parkingDistance > 20) {
+  if (parkingDistance < 30 && parkingDistance > 20 && previousParkingDistance < 30 && previousParkingDistance > 20) {
     reset = 1;
   } else {
     reset = 0;
@@ -68,6 +68,8 @@ void loop() {
   }
 
   delay(10);
+
+  previousParkingDistance = readReset(); 
 }
 
 

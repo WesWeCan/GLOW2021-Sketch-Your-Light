@@ -2,6 +2,7 @@
 bool debug = false;
 int lastSelectedPixel = 0;
 int selectedPixel = 0;
+int previousParkingDistance;
 
 
 // Distance Sensor
