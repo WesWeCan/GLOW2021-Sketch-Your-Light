@@ -140,10 +140,10 @@ void coldWhite(int startPixel, int stopPixel) {
     //    int b = (int) map(i, startPixel, stopPixel, 0, 255);
 
     if (inRange(selectedPixel, coldStart, coldEnd)) {
-      pixels.setPixelColor(i, getPixelColorHsv(i, 255, 255, 255 / 2));
+      pixels.setPixelColor(i, getPixelColorHsv(i, 180, 180, 180 / 2));
     }
     else {
-      pixels.setPixelColor(i, getPixelColorHsv(i, 255, 255, 255 / 8));
+      pixels.setPixelColor(i, getPixelColorHsv(i, 180, 180, 180 / 8));
     }
 
   }

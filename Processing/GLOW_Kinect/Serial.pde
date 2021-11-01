@@ -3,6 +3,7 @@ import processing.serial.*;
 Serial serialPort;
 
 int platformValue = 0;
+boolean reset = false;
 
 void serialEvent(Serial serialPort) {   
   String inData = serialPort.readStringUntil('\n');  // read the serial string until seeing a carriage return
@@ -11,6 +12,9 @@ void serialEvent(Serial serialPort) {
     platformValue = int(trim(inData.substring(1))); //store the value
     return;
   }
+  else {
+   println("I am recieving, but cann't parse. Is Debug mode on?"); 
+  }
 }
 
 void initSerial() {
@@ -18,7 +22,8 @@ void initSerial() {
   for (int i = 0; i < Serial.list().length; i++) println("[", i, "]:", Serial.list()[i]);
   String portName = Serial.list()[Serial.list().length-1];//MAC: check the printed list
   //String portName = Serial.list()[9];//WINDOWS: check the printed list
-  portName = "/dev/ttyACM0"; // Serial on RPi
+  //portName = "/dev/ttyACM0"; // Serial on RPi
+  portName = "COM4";
   serialPort = new Serial(this, portName, 115200);
   serialPort.bufferUntil('\n'); // arduino ends each data packet with a carriage return 
   serialPort.clear();           // flush the Serial buffer
