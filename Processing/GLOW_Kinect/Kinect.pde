@@ -131,7 +131,7 @@ PVector getHandPosition() {
 
 
   // Is there a hand detected?
-  if (dots.size() > 0) {
+  if (dots.size() > 3) {
     handDetected = true;
 
     PVector ap = new PVector(sumX/dots.size(), sumY/dots.size());
@@ -155,7 +155,7 @@ PVector getHandPosition() {
     }
 
     float factor = reference/midpoint; //factor to be used to scale user's movements to MaxMSP's range  
-    lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range  
+    //lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range  
 
 
     prevZ = lerpedPos.z;

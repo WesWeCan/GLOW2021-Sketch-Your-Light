@@ -1,5 +1,5 @@
 // Control
-bool debug = true;
+bool debug = false;
 int lastSelectedPixel = 0;
 int selectedPixel = 0;
 
