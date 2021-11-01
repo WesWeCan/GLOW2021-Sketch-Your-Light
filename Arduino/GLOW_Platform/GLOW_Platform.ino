@@ -26,6 +26,13 @@ void loop() {
   // Real distance of the foot in relation towards the sensor
   float footDistance = readUltraSonic();
 
+  // Determine if reset is activated
+  if (readReset < 100) {
+    Reset = 1;
+  } else {
+    Reset = 0;  
+  }
+
   // mapping only if in range!
   if (footDistance < maxDistance) {
     selectedPixel = (int) map(footDistance, 0, maxDistance, 0, NUMPIXELS);
@@ -55,6 +62,7 @@ void loop() {
   }
   else {
     sendDataToProcessing('c', calculateValue());
+    sendDataToProcessing('r', Reset);
   }
 
 

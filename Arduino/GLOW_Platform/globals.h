@@ -8,6 +8,11 @@ int selectedPixel = 0;
 const int pingPin = 12; // Trigger Pin of Ultrasonic Sensor
 const int echoPin = 8; // Echo Pin of Ultrasonic Sensor
 
+// Parking sensor
+const int pingPinReset = 3; // Trigger pin of parking sensor
+const int echoPinReset = 7; // Echo pin of parking sensor
+int Reset = 0; // 0 if there is no reset activated, 1 if reset is activated
+
 const int maxDistance = 87;
 
 

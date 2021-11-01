@@ -23,3 +23,20 @@ float readUltraSonic() {
 
   return (int)cm;
 }
+
+float readReset() {
+  
+  long duration, inches, cm;
+  pinMode(pingPinReset, OUTPUT);
+  digitalWrite(pingPinReset, LOW);
+  delayMicroseconds(2);
+  digitalWrite(pingPinReset, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(pingPinReset, LOW);
+  pinMode(echoPinReset, INPUT);
+  duration = pulseIn(echoPinReset, HIGH);
+  inches = microsecondsToInches(duration);
+  cm = microsecondsToCentimeters(duration);
+
+  return (int)cm;
+}
