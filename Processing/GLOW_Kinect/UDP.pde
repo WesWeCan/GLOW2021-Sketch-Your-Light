@@ -20,6 +20,7 @@ String prevMessage = "";
 // Data is mapped to a range between 0 and 100 for X and Y
 void sendData(PVector pos) {
 
+
   String message = 
     "" +
     PlatformID + ":" +
@@ -30,14 +31,23 @@ void sendData(PVector pos) {
 
 
 
+
+
+
   if (!message.equals(prevMessage)) {
+
+    if (message.equals(PlatformID + ":0:0:0:"+(int)platformValue) && (int)platformValue != 600) {
+      //println("ignored");
+      return;
+    };
+
     println(message);
     prevMessage = message;
     // formats the message for Pd
     message = message+"\n";
     // send the message
-    
-    for( String ip : ips){
+
+    for ( String ip : ips) {
       udp.send( message, ip, port );
     }
   }

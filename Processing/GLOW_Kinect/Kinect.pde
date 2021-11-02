@@ -25,8 +25,8 @@ float angle;
 PVector lerpedPos = new PVector(0, 0, 0);
 
 
-int[] MaxMSP_range = {144, 164};
-float midpoint = 154;
+int[] MaxMSP_range = {144, 165};
+float midpoint = 148;
 boolean handDetected = false;
 boolean reference_check = false;
 float reference = -1;
@@ -170,9 +170,9 @@ PVector getHandPosition() {
 
     return lerpedPos;
   } else {
-    lerpedPos = new PVector(-1, -1, -1);
+    lerpedPos = new PVector(-1, -1, 0);
     handDetected = false;
-    reference_check = false;
+    
     return lerpedPos;
   }
 }
