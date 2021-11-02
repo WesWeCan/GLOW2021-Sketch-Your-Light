@@ -1,7 +1,7 @@
 // import UDP library
 import hypermedia.net.*;
 
-int port = 54321;
+int port = 54322;
 String ipPan = "192.168.4.188"; // IP Pantelis
 String ipNuc = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
 

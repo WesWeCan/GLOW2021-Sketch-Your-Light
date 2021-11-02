@@ -101,7 +101,7 @@ PVector getHandPosition() {
   int exclusionL = 100;
   int exclusionR = 100;
   int exclusionT = 10;
-  int exclusionB = 100;
+  int exclusionB = 120;
   
   line(exclusionL, 0, exclusionL, height);
   line(kinect.width-exclusionR, 0, kinect.width-exclusionR, height);
