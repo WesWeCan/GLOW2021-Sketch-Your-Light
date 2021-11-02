@@ -25,8 +25,8 @@ float angle;
 PVector lerpedPos = new PVector(0, 0, 0);
 
 
-int[] MaxMSP_range = {144, 164};
-float midpoint = 154;
+int[] maxRange = {144, 165};
+float midpoint = 148;
 boolean handDetected = false;
 boolean reference_check = false;
 float reference = -1;
@@ -52,6 +52,15 @@ boolean initKinect() {
     return true;
   }
 }
+
+
+int numReadings = 25;
+
+int[] readings = new int[numReadings];      // the readings from the analog input
+int readIndex = 0;              // the index of the current reading
+int total = 0;                  // the running total
+int average = 0;                // the average
+
 
 
 PVector getHandPosition() {
@@ -89,11 +98,15 @@ PVector getHandPosition() {
   int sumX = 0;
   int sumY = 0;
 
-  int exclusion = 100;
-  line(exclusion, 0, exclusion, height);
-  line(kinect.width-exclusion, 0, kinect.width-exclusion, height);
-  line(0, exclusion, width, exclusion);
-  line(0, kinect.height-exclusion, width, kinect.height-exclusion);
+  int exclusionL = 100;
+  int exclusionR = 100;
+  int exclusionT = 10;
+  int exclusionB = 120;
+  
+  line(exclusionL, 0, exclusionL, height);
+  line(kinect.width-exclusionR, 0, kinect.width-exclusionR, height);
+  line(0, exclusionT, width, exclusionT);
+  line(0, kinect.height-exclusionB, width, kinect.height-exclusionB);
 
   ArrayList<PVector> dots = new ArrayList<PVector>();
 
@@ -101,13 +114,23 @@ PVector getHandPosition() {
     int x = (int)fingers.getFingerX(i);
     int y = (int)fingers.getFingerY(i);
 
-    if (x < exclusion || x > kinect.width-exclusion) {
+    if (x < exclusionL ) {
+      continue;
+    }
+    
+    if (x > kinect.width-exclusionR ) {
+      continue;
+    }
+    
+    if (y < exclusionT ) {
       continue;
     }
 
-    if (y < exclusion || y > kinect.height-exclusion) {
+    if (y > kinect.height-exclusionB) {
       continue;
     }
+    
+   
 
     dots.add(new PVector(x, y));
 
@@ -122,7 +145,7 @@ PVector getHandPosition() {
   for (PVector dot : dots) {
     fill(255, 0, 0);
     if (showDots) {
-    ellipse(dot.x-5, dot.y -5, 10, 10);
+      ellipse(dot.x-5, dot.y -5, 10, 10);
     }
 
     sumX += dot.x;
@@ -149,14 +172,54 @@ PVector getHandPosition() {
     color c = get((int)lerpedPos.x, (int)lerpedPos.y);
     lerpedPos.z = brightness(c);
 
+    int z = (int)brightness(c);
+
+    if (z > 0 && z < 255) {
+      
+
+      // subtract the last reading:
+      total = total - readings[readIndex];
+      // read from the sensor:
+      readings[readIndex] = z;
+      // add the reading to the total:
+      total = total + readings[readIndex];
+      // advance to the next position in the array:
+      readIndex = readIndex + 1;
+
+      // if we're at the end of the array...
+      if (readIndex >= numReadings) {
+        // ...wrap around to the beginning:
+        readIndex = 0;
+      }
+
+      average = total / numReadings;
+      lerpedPos.z = average;
+      
+      println("z " +z);
+      println("lz " + (int)lerpedPos.z);
+      
+      lerpedPos.z = map(lerpedPos.z, 140, 200, maxRange[0], maxRange[1]);
+      lerpedPos.z = constrain(lerpedPos.z, maxRange[0], maxRange[1]);
+      
+      
+      
+    }
+    else {
+    
+    return new PVector(-1, -1, 0);
+    }
+    
+    
+    //println(lerpedPos.z);
+
     if (!reference_check) {
       reference = lerpedPos.z;
       reference_check = true;
     }
 
     float factor = reference/midpoint; //factor to be used to scale user's movements to MaxMSP's range  
-    lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range
-    lerpedPos.z = constrain(lerpedPos.z, MaxMSP_range[0], MaxMSP_range[1]); // Constrain values to MAX bounds
+    //lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range
+    //lerpedPos.z = constrain(lerpedPos.z, MaxMSP_range[0], MaxMSP_range[1]); // Constrain values to MAX bounds
 
 
     prevZ = lerpedPos.z;
@@ -164,15 +227,15 @@ PVector getHandPosition() {
 
     //println(reference_check);
     if (showDots) {
-    fill(0, 0, 255);
-    ellipse(lerpedPos.x, lerpedPos.y, 10, 10);
+      fill(0, 0, 255);
+      ellipse(lerpedPos.x, lerpedPos.y, 10, 10);
     }
 
     return lerpedPos;
   } else {
-    lerpedPos = new PVector(-1, -1, -1);
+    lerpedPos = new PVector(-1, -1, 0);
     handDetected = false;
-    reference_check = false;
+
     return lerpedPos;
   }
 }

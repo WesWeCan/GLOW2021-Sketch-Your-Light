@@ -22,6 +22,8 @@ void setup() {
 }
 
 void draw() {
+  
+  //getHandPosition();
   sendData(getHandPosition());
   drawKinect();
 }

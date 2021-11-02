@@ -15,6 +15,11 @@ void serialEvent(Serial serialPort) {
   else {
    println("I am recieving, but cann't parse. Is Debug mode on?"); 
   }
+  
+  
+  if(platformValue == 600){
+   reference_check = false; 
+  }
 }
 
 void initSerial() {
