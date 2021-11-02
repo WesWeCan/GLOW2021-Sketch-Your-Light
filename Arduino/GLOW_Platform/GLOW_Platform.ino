@@ -6,7 +6,7 @@ bool debug = false;
 #include "leds.h";
 #include "distance.h";
 
-const int numReadings = 20;
+const int numReadings = 15;
 
 int readings[numReadings];      // the readings from the analog input
 int readIndex = 0;              // the index of the current reading
