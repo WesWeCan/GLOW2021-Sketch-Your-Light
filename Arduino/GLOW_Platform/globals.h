@@ -1,32 +1,20 @@
-// Control
-bool debug = false;
-int lastSelectedPixel = 0;
-int selectedPixel = 0;
-int previousParkingDistance;
-
-
-// Distance Sensor
-const int pingPin = 12; // Trigger Pin of Ultrasonic Sensor
-const int echoPin = 8; // Echo Pin of Ultrasonic Sensor
-
-// Parking sensor
-const int pingPinReset = 3; // Trigger pin of parking sensor
-const int echoPinReset = 7; // Echo pin of parking sensor
-int reset = 0; // 0 if there is no reset activated, 1 if reset is activated
-
-const int maxDistance = 80;
-
-
-
 // NeoPixel
 #include <Adafruit_NeoPixel.h>
 
 #define PIN        6 // On Trinket or Gemma, suggest changing this to 1
-#define NUMPIXELS 52 // Popular NeoPixel ring size
+#define NUMPIXELS 53 // Popular NeoPixel ring size
 
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 #define MAXHUE 256*6
+
+// Control
+
+int lastSelectedPixel = 0;
+int selectedPixel = NUMPIXELS;
+int previousParkingDistance;
+
+bool reset = false;
 
 
 // Calculate the start and stops of of the feet.
@@ -34,7 +22,7 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 const int coldPercent = 20;
 const int warmPercent = 20;
-const int rgbPercent = 60;
+const int rgbPercent = 61;
 
 const int coldStart = 0;
 const int coldEnd = map(coldPercent, 0, 100, 0, NUMPIXELS);

@@ -1,42 +1,33 @@
+#include <NewPing.h>
 
-long microsecondsToInches(long microseconds) {
-  return microseconds / 74 / 2;
-}
+#define SONAR_NUM 2      // Number of sensors.
+#define MAX_DISTANCE 100 // Maximum distance (in cm) to ping.
 
-long microsecondsToCentimeters(long microseconds) {
-  return microseconds / 29 / 2;
-}
+#define FOOT_TRIGGER 12
+#define FOOT_ECHO 8
 
-float readUltraSonic() {
-  
-  long duration, inches, cm;
-  pinMode(pingPin, OUTPUT);
-  digitalWrite(pingPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(pingPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(pingPin, LOW);
-  pinMode(echoPin, INPUT);
-  duration = pulseIn(echoPin, HIGH);
-  inches = microsecondsToInches(duration);
-  cm = microsecondsToCentimeters(duration);
+#define RESET_TRIGGER 3
+#define RESET_ECHO 7
 
-  return (int)cm;
-}
+int maxCalcDistance = 85;
 
-float readReset() {
-  
-  long duration, inches, cm;
-  pinMode(pingPinReset, OUTPUT);
-  digitalWrite(pingPinReset, LOW);
-  delayMicroseconds(2);
-  digitalWrite(pingPinReset, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(pingPinReset, LOW);
-  pinMode(echoPinReset, INPUT);
-  duration = pulseIn(echoPinReset, HIGH);
-  inches = microsecondsToInches(duration);
-  cm = microsecondsToCentimeters(duration);
+NewPing sonar[SONAR_NUM] = {   // Sensor object array.
+  NewPing(FOOT_TRIGGER, FOOT_ECHO, MAX_DISTANCE), // Each sensor's trigger pin, echo pin, and max distance to ping. 
+  NewPing(RESET_TRIGGER, RESET_ECHO, MAX_DISTANCE), 
+};
 
-  return (int)cm;
+int footDistance = -1;
+int resetDistance = -1;
+
+void readSonars(){
+  for (int i = 0; i < SONAR_NUM; i++) { // Loop through each sensor and display results.
+    delay(5); // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
+
+    if(i == 0){
+      footDistance = sonar[i].ping_cm();
+    }
+    else if (i == 1) {
+      resetDistance = sonar[i].ping_cm();
+    }
+  }
 }

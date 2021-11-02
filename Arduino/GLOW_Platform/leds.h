@@ -1,16 +1,17 @@
-
-
-void initLed() {
-  pixels.begin();
-
+void testAnim() {
   // Test all pixels
   for (int i = 0; i < NUMPIXELS; i++) {
     pixels.setPixelColor(i, pixels.Color(0, 150, 0));
     pixels.show();
     delay(10);
   }
-
 }
+
+void initLed() {
+  pixels.begin();
+  testAnim();
+}
+
 
 
 // This code is some kind of "Black Box".
@@ -102,16 +103,16 @@ bool inRange(int pixel, int minPixel, int maxPixel) {
 }
 
 
-void rgbSection(int startPixel, int stopPixel) {
+void rgbSection(int startPixel, int stopPixel, bool isAnim) {
 
   for (int i = startPixel; i < stopPixel; i++) {
 
     int count = stopPixel - startPixel;
     uint16_t h = map(i, startPixel, stopPixel, 0, count) * (MAXHUE / count);
 
-    if (inRange(selectedPixel, rgbStart, rgbEnd)) {
-      
-      if(selectedPixel == i){
+    if (inRange(selectedPixel, rgbStart-3, rgbEnd)) {
+
+      if (selectedPixel == i) {
         pixels.setPixelColor(i - 4, getPixelColorHsv(i, h, 255, 125));
         pixels.setPixelColor(i - 3, getPixelColorHsv(i, h, 255, 150));
         pixels.setPixelColor(i - 2, getPixelColorHsv(i, h, 255, 175));
@@ -125,37 +126,72 @@ void rgbSection(int startPixel, int stopPixel) {
       else {
         pixels.setPixelColor(i + 0, getPixelColorHsv(i, h, 255, 255 / 8));
       }
-    
     }
     else {
       pixels.setPixelColor(i + 0, getPixelColorHsv(i, h, 255, 255 / 8));
     }
+    
+    if(isAnim){
+      delay(10);
+      pixels.show();
+    }
   }
-
 }
 
 
-void coldWhite(int startPixel, int stopPixel) {
+void coldWhite(int startPixel, int stopPixel, bool isAnim) {
   for (int i = startPixel; i < stopPixel; i++) {
     //    int b = (int) map(i, startPixel, stopPixel, 0, 255);
 
-    if (inRange(selectedPixel, coldStart, coldEnd)) {
-      pixels.setPixelColor(i, getPixelColorHsv(i, 180, 180, 180 / 2));
+    if (inRange(selectedPixel, coldStart, coldEnd-3)) {
+      pixels.setPixelColor(i, getPixelColorHsv(i, 190, 190, 190 / 2));
     }
     else {
-      pixels.setPixelColor(i, getPixelColorHsv(i, 180, 180, 180 / 8));
+      pixels.setPixelColor(i, getPixelColorHsv(i, 190, 190, 190 / 8));
+    }
+
+    if(isAnim){
+      delay(10);
+      pixels.show();
     }
 
   }
 }
 
-void warmWhite(int startPixel, int stopPixel) {
+void warmWhite(int startPixel, int stopPixel, bool isAnim) {
   for (int i = startPixel; i < stopPixel; i++) {
     if (inRange(selectedPixel, warmStart, warmEnd)) {
       pixels.setPixelColor(i, getPixelColorHsv(i, 33, 87, 69));
     }
     else {
-      pixels.setPixelColor(i, getPixelColorHsv(i, 33, 87, 69/8));
+      pixels.setPixelColor(i, getPixelColorHsv(i, 33, 87, 69 / 8));
+    }
+
+    if(isAnim){
+      delay(10);
+      pixels.show();
     }
   }
+}
+
+
+void resetAnim() {
+  // Test all pixels
+
+  int trail = NUMPIXELS;
+  for (int i = 0; i < NUMPIXELS + trail; i++) {
+    
+    for (int j = 0; j < trail; j++) {
+      int bright = map(j, 0, trail, 0, 150);
+      pixels.setPixelColor(i - j, pixels.Color(bright, bright, bright));
+    }
+
+    for(int x = 0; x < i - trail; x++){
+      pixels.setPixelColor(x, pixels.Color(0, 0, 0));
+    }
+
+    pixels.show();
+    delay(10);
+  }
+
 }
