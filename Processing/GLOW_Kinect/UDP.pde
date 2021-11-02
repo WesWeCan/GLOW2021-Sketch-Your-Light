@@ -2,8 +2,10 @@
 import hypermedia.net.*;
 
 int port = 54321;
-String ip = "192.168.4.188"; // IP Pantelis
-//String ip = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
+String ipPan = "192.168.4.188"; // IP Pantelis
+String ipNuc = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
+
+String[] ips = {ipPan, ipNuc};
 
 UDP udp;  // define the UDP object
 
@@ -28,12 +30,15 @@ void sendData(PVector pos) {
 
 
 
-  if (!message.equals( prevMessage)) {
+  if (!message.equals(prevMessage)) {
     println(message);
     prevMessage = message;
     // formats the message for Pd
     message = message+"\n";
     // send the message
-    udp.send( message, ip, port );
+    
+    for( String ip : ips){
+      udp.send( message, ip, port );
+    }
   }
 }

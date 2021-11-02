@@ -155,7 +155,8 @@ PVector getHandPosition() {
     }
 
     float factor = reference/midpoint; //factor to be used to scale user's movements to MaxMSP's range  
-    //lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range  
+    lerpedPos.z = midpoint + factor*(lerpedPos.z - reference); //Scale Kz inside MaxMSP range
+    lerpedPos.z = constrain(lerpedPos.z, MaxMSP_range[0], MaxMSP_range[1]); // Constrain values to MAX bounds
 
 
     prevZ = lerpedPos.z;
