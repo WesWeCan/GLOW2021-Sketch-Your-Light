@@ -27,8 +27,8 @@ void initSerial() {
   for (int i = 0; i < Serial.list().length; i++) println("[", i, "]:", Serial.list()[i]);
   String portName = Serial.list()[Serial.list().length-1];//MAC: check the printed list
   //String portName = Serial.list()[9];//WINDOWS: check the printed list
-  //portName = "/dev/ttyACM0"; // Serial on RPi
-  portName = "COM4";
+  portName = "/dev/ttyACM0"; // Serial on RPi
+  //portName = "COM4";
   serialPort = new Serial(this, portName, 115200);
   serialPort.bufferUntil('\n'); // arduino ends each data packet with a carriage return 
   serialPort.clear();           // flush the Serial buffer

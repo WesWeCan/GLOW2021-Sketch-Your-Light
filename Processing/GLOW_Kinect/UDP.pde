@@ -1,7 +1,7 @@
 // import UDP library
 import hypermedia.net.*;
 
-int port = 54322;
+int port = 54321;
 String ipPan = "192.168.4.188"; // IP Pantelis
 String ipNuc = "192.168.4.125"; // Static IP Intel NUC on WiFiVNC 
 
@@ -34,13 +34,13 @@ void sendData(PVector pos) {
 
 
 
-  if (!message.equals(prevMessage)) {
+  if (!message.equals(prevMessage)  || true) {
 
     if (message.equals(PlatformID + ":0:0:0:"+(int)platformValue) && (int)platformValue != 600) {
       //println("ignored");
       return;
     };
-
+    
     println(message);
     prevMessage = message;
     // formats the message for Pd
@@ -50,5 +50,7 @@ void sendData(PVector pos) {
     for ( String ip : ips) {
       udp.send( message, ip, port );
     }
+
+    
   }
 }

@@ -154,7 +154,7 @@ PVector getHandPosition() {
 
 
   // Is there a hand detected?
-  if (dots.size() > 3) {
+  if (dots.size() > 1) {
     handDetected = true;
 
     PVector ap = new PVector(sumX/dots.size(), sumY/dots.size());
@@ -195,8 +195,8 @@ PVector getHandPosition() {
       average = total / numReadings;
       lerpedPos.z = average;
       
-      println("z " +z);
-      println("lz " + (int)lerpedPos.z);
+      //println("z " +z);
+      //println("lz " + (int)lerpedPos.z);
       
       lerpedPos.z = map(lerpedPos.z, 140, 200, maxRange[0], maxRange[1]);
       lerpedPos.z = constrain(lerpedPos.z, maxRange[0], maxRange[1]);
