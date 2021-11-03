@@ -3,8 +3,8 @@
 bool debug = false;
 
 #include "globals.h"
-#include "leds.h";
-#include "distance.h";
+#include "leds.h"
+#include "distance.h"
 
 const int numReadings = 15;
 
