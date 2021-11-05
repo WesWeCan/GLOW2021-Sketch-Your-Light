@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-9",
@@ -47,8 +48,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -81,6 +82,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -90,6 +92,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "SYL - LAMPs-bpatcher.maxpat",
 									"numinlets" : 7,
@@ -111,10 +114,10 @@
 									"patching_rect" : [ 429.561415192643835, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[159]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[159]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -134,10 +137,10 @@
 									"patching_rect" : [ 378.390916599393677, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[160]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[160]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -157,10 +160,10 @@
 									"patching_rect" : [ 319.920423954465605, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[161]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[4]"
+											"parameter_longname" : "number[161]",
+											"parameter_shortname" : "number[4]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -180,10 +183,10 @@
 									"patching_rect" : [ 255.131346954465585, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[162]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[20]"
+											"parameter_longname" : "number[162]",
+											"parameter_shortname" : "number[20]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -399,7 +402,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 473.0, 78.0, 63.0, 24.0 ],
+					"patching_rect" : [ 473.0, 78.0, 63.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -421,14 +424,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 690.0, 692.0 ],
+						"rect" : [ 535.0, 454.0, 450.0, 241.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -455,6 +458,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -464,12 +469,13 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "SYL - LAMPs-bpatcher.maxpat",
 									"numinlets" : 7,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 22.0, 152.259999999999991, 648.259256184101105, 756.074073255062103 ],
+									"patching_rect" : [ 22.0, 152.259999999999991, 771.663510620594025, 766.712371051311493 ],
 									"viewvisibility" : 1
 								}
 
@@ -485,10 +491,10 @@
 									"patching_rect" : [ 429.561415192643835, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[103]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[103]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -508,10 +514,10 @@
 									"patching_rect" : [ 378.390916599393677, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[104]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[104]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -531,10 +537,10 @@
 									"patching_rect" : [ 319.920423954465605, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[105]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[4]"
+											"parameter_longname" : "number[105]",
+											"parameter_shortname" : "number[4]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -554,10 +560,10 @@
 									"patching_rect" : [ 255.131346954465585, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[106]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[20]"
+											"parameter_longname" : "number[106]",
+											"parameter_shortname" : "number[20]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -697,7 +703,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"midpoints" : [ 159.5, 104.0, 136.376542697350203, 104.0 ],
+									"midpoints" : [ 159.5, 104.0, 156.943918436765671, 104.0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -705,7 +711,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 6 ],
-									"midpoints" : [ 431.272276192643858, 121.0, 660.759256184101105, 121.0 ],
+									"midpoints" : [ 431.272276192643858, 121.0, 784.163510620594025, 121.0 ],
 									"order" : 0,
 									"source" : [ "obj-197", 0 ]
 								}
@@ -722,7 +728,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 5 ],
-									"midpoints" : [ 381.420423954465605, 122.0, 555.882713486750959, 122.0 ],
+									"midpoints" : [ 381.420423954465605, 122.0, 658.719592183828354, 122.0 ],
 									"order" : 0,
 									"source" : [ "obj-209", 0 ]
 								}
@@ -739,7 +745,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 4 ],
-									"midpoints" : [ 321.631284954465627, 120.0, 451.006170789400755, 120.0 ],
+									"midpoints" : [ 321.631284954465627, 120.0, 533.275673747062683, 120.0 ],
 									"order" : 0,
 									"source" : [ "obj-210", 0 ]
 								}
@@ -756,7 +762,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 3 ],
-									"midpoints" : [ 256.842207954465607, 121.0, 346.129628092050552, 121.0 ],
+									"midpoints" : [ 256.842207954465607, 121.0, 407.831755310297012, 121.0 ],
 									"order" : 0,
 									"source" : [ "obj-211", 0 ]
 								}
@@ -773,7 +779,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 395.0, 78.0, 63.0, 24.0 ],
+					"patching_rect" : [ 395.0, 78.0, 63.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -795,14 +801,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 690.0, 692.0 ],
+						"rect" : [ 36.0, 453.0, 430.0, 259.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -829,6 +835,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -838,6 +846,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "SYL - LAMPs-bpatcher.maxpat",
 									"numinlets" : 7,
@@ -859,10 +868,10 @@
 									"patching_rect" : [ 429.561415192643835, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[89]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[89]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -882,10 +891,10 @@
 									"patching_rect" : [ 378.390916599393677, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[90]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[90]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -905,10 +914,10 @@
 									"patching_rect" : [ 319.920423954465605, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[91]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[4]"
+											"parameter_longname" : "number[91]",
+											"parameter_shortname" : "number[4]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -928,10 +937,10 @@
 									"patching_rect" : [ 255.131346954465585, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[92]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[20]"
+											"parameter_longname" : "number[92]",
+											"parameter_shortname" : "number[20]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1147,7 +1156,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 318.0, 78.0, 63.0, 24.0 ],
+					"patching_rect" : [ 318.0, 78.0, 63.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1169,14 +1178,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 690.0, 692.0 ],
+						"rect" : [ 540.0, 87.0, 447.0, 248.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1203,6 +1212,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -1212,6 +1223,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "SYL - LAMPs-bpatcher.maxpat",
 									"numinlets" : 7,
@@ -1233,10 +1245,10 @@
 									"patching_rect" : [ 429.561415192643835, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[29]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[29]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1256,10 +1268,10 @@
 									"patching_rect" : [ 378.390916599393677, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[30]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[30]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1279,10 +1291,10 @@
 									"patching_rect" : [ 319.920423954465605, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[31]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[4]"
+											"parameter_longname" : "number[31]",
+											"parameter_shortname" : "number[4]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1302,10 +1314,10 @@
 									"patching_rect" : [ 255.131346954465585, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[86]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[20]"
+											"parameter_longname" : "number[86]",
+											"parameter_shortname" : "number[20]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1521,7 +1533,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 240.0, 78.0, 63.0, 24.0 ],
+					"patching_rect" : [ 240.0, 78.0, 63.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1543,14 +1555,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 102.0, 87.0, 916.0, 705.0 ],
+						"rect" : [ 34.0, 87.0, 436.0, 248.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1577,6 +1589,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -1586,12 +1600,13 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "SYL - LAMPs-bpatcher.maxpat",
 									"numinlets" : 7,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 22.0, 162.259999999999991, 648.259256184101105, 756.074073255062103 ],
+									"patching_rect" : [ 22.0, 156.01000023841857, 1256.509250223636627, 968.324073016643524 ],
 									"viewvisibility" : 1
 								}
 
@@ -1607,10 +1622,10 @@
 									"patching_rect" : [ 429.561415192643835, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[25]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[25]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1630,10 +1645,10 @@
 									"patching_rect" : [ 378.390916599393677, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[26]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[19]"
+											"parameter_longname" : "number[26]",
+											"parameter_shortname" : "number[19]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1653,10 +1668,10 @@
 									"patching_rect" : [ 319.920423954465605, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[27]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[4]"
+											"parameter_longname" : "number[27]",
+											"parameter_shortname" : "number[4]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1676,10 +1691,10 @@
 									"patching_rect" : [ 255.131346954465585, 90.915254268109265, 45.463482111692429, 22.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[28]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[20]"
+											"parameter_longname" : "number[28]",
+											"parameter_shortname" : "number[20]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -1819,7 +1834,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 1 ],
-									"midpoints" : [ 159.5, 104.0, 136.376542697350203, 104.0 ],
+									"midpoints" : [ 159.5, 104.0, 237.751541703939438, 104.0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -1827,7 +1842,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 6 ],
-									"midpoints" : [ 431.272276192643858, 121.0, 660.759256184101105, 121.0 ],
+									"midpoints" : [ 431.272276192643858, 121.0, 1269.009250223636627, 121.0 ],
 									"order" : 0,
 									"source" : [ "obj-197", 0 ]
 								}
@@ -1844,7 +1859,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 5 ],
-									"midpoints" : [ 381.420423954465605, 122.0, 555.882713486750959, 122.0 ],
+									"midpoints" : [ 381.420423954465605, 122.0, 1062.757708519697189, 122.0 ],
 									"order" : 0,
 									"source" : [ "obj-209", 0 ]
 								}
@@ -1861,7 +1876,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 4 ],
-									"midpoints" : [ 321.631284954465627, 120.0, 451.006170789400755, 120.0 ],
+									"midpoints" : [ 321.631284954465627, 120.0, 856.506166815757751, 120.0 ],
 									"order" : 0,
 									"source" : [ "obj-210", 0 ]
 								}
@@ -1878,7 +1893,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 3 ],
-									"midpoints" : [ 256.842207954465607, 121.0, 346.129628092050552, 121.0 ],
+									"midpoints" : [ 256.842207954465607, 121.0, 650.254625111818314, 121.0 ],
 									"order" : 0,
 									"source" : [ "obj-211", 0 ]
 								}
@@ -1895,7 +1910,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 159.0, 78.0, 63.0, 24.0 ],
+					"patching_rect" : [ 159.0, 78.0, 63.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1917,14 +1932,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 355.0, 260.0, 934.0, 599.0 ],
+						"rect" : [ 48.0, 104.0, 934.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1951,6 +1966,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -2132,7 +2149,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 366.710922500000038, 557.69342000000006, 43.0, 21.0 ]
+									"patching_rect" : [ 366.710922500000038, 557.69342000000006, 43.0, 22.0 ]
 								}
 
 							}
@@ -2260,7 +2277,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 49.421845000000019, 557.69342000000006, 43.0, 21.0 ]
+									"patching_rect" : [ 49.421845000000019, 557.69342000000006, 43.0, 22.0 ]
 								}
 
 							}
@@ -2388,7 +2405,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 702.289077499999962, 447.693420000000003, 43.0, 21.0 ]
+									"patching_rect" : [ 702.289077499999962, 447.693420000000003, 43.0, 22.0 ]
 								}
 
 							}
@@ -2516,7 +2533,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 428.289077499999962, 447.693420000000003, 43.0, 21.0 ]
+									"patching_rect" : [ 428.289077499999962, 447.693420000000003, 43.0, 22.0 ]
 								}
 
 							}
@@ -2667,7 +2684,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 118.5, 447.693420000000003, 43.0, 21.0 ]
+									"patching_rect" : [ 118.5, 447.693420000000003, 43.0, 22.0 ]
 								}
 
 							}
@@ -2744,7 +2761,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 163.0, 47.0, 91.0, 33.0 ],
+									"patching_rect" : [ 163.0, 47.0, 91.0, 34.0 ],
 									"text" : "Listen on IPv6 instead of IPv4."
 								}
 
@@ -2885,14 +2902,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 3,
+											"minor" : 2,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 315.0, 601.0, 667.0, 239.0 ],
+										"rect" : [ 42.0, 85.0, 667.0, 239.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2919,6 +2936,8 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -3676,7 +3695,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 159.0, 35.0, 92.0, 24.0 ],
+					"patching_rect" : [ 159.0, 35.0, 92.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3725,8 +3744,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3759,6 +3778,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-65",
@@ -3833,10 +3853,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[120]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button[120]"
+											"parameter_shortname" : "button[120]",
+											"parameter_type" : 2
 										}
 
 									}
@@ -3858,10 +3878,10 @@
 									"patching_rect" : [ 932.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[67]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number"
+											"parameter_longname" : "number[67]",
+											"parameter_shortname" : "number",
+											"parameter_type" : 3
 										}
 
 									}
@@ -3883,10 +3903,10 @@
 									"patching_rect" : [ 877.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[1]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[1]"
+											"parameter_longname" : "number[1]",
+											"parameter_shortname" : "number[1]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -3908,10 +3928,10 @@
 									"patching_rect" : [ 822.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[70]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[70]"
+											"parameter_longname" : "number[70]",
+											"parameter_shortname" : "number[70]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -4007,10 +4027,10 @@
 									"patching_rect" : [ 1098.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[71]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[71]"
+											"parameter_longname" : "number[71]",
+											"parameter_shortname" : "number[71]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -4032,10 +4052,10 @@
 									"patching_rect" : [ 1043.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[72]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[72]"
+											"parameter_longname" : "number[72]",
+											"parameter_shortname" : "number[72]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -4057,10 +4077,10 @@
 									"patching_rect" : [ 988.0, 298.5, 45.0, 23.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 3,
-											"parameter_longname" : "number[5]",
 											"parameter_invisible" : 1,
-											"parameter_shortname" : "number[5]"
+											"parameter_longname" : "number[5]",
+											"parameter_shortname" : "number[5]",
+											"parameter_type" : 3
 										}
 
 									}
@@ -4197,10 +4217,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[116]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button"
+											"parameter_shortname" : "button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4244,10 +4264,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[117]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button"
+											"parameter_shortname" : "button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4283,10 +4303,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "live.button[8]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.button"
+											"parameter_shortname" : "live.button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4322,10 +4342,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "live.button[4]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.button"
+											"parameter_shortname" : "live.button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4361,10 +4381,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "live.button[7]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.button"
+											"parameter_shortname" : "live.button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4400,10 +4420,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "live.button[6]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.button"
+											"parameter_shortname" : "live.button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4439,10 +4459,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "live.button[3]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "live.button"
+											"parameter_shortname" : "live.button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4486,10 +4506,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[118]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button"
+											"parameter_shortname" : "button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4533,10 +4553,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[114]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button"
+											"parameter_shortname" : "button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4580,10 +4600,10 @@
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
-											"parameter_type" : 2,
 											"parameter_longname" : "button[115]",
 											"parameter_mmax" : 1,
-											"parameter_shortname" : "button"
+											"parameter_shortname" : "button",
+											"parameter_type" : 2
 										}
 
 									}
@@ -4608,14 +4628,19 @@
 							}
 , 							{
 								"box" : 								{
+									"aspect" : 0,
 									"background" : 1,
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"draw_tab_name" : 0,
 									"id" : "obj-82",
 									"ignoreclick" : 1,
+									"ip_rotation" : 0.25,
 									"maxclass" : "mira.frame",
-									"numinlets" : 0,
+									"mira_focus" : 0,
+									"miraweb_aspect" : 1,
+									"numinlets" : 1,
 									"numoutlets" : 0,
+									"orientation" : 1,
 									"patching_rect" : [ 89.2416076979639, 50.284495985029366, 478.516784604072313, 340.195517999999993 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 335.24832213658118, 345.649993999999992, 333.50335572683764, 237.100036000000017 ],
@@ -4908,7 +4933,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 12.0, 105.0, 59.0, 24.0 ],
+					"patching_rect" : [ 12.0, 105.0, 59.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4983,551 +5008,545 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-2::obj-208" : [ "number[20]", "number[20]", 0 ],
-			"obj-7::obj-2::obj-121::obj-60" : [ "button[122]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-234" : [ "slider[7]", "slider", 0 ],
-			"obj-8::obj-2::obj-112" : [ "button[86]", "button[22]", 0 ],
-			"obj-9::obj-2::obj-156::obj-139" : [ "button[178]", "button[26]", 0 ],
-			"obj-8::obj-201" : [ "number[104]", "number[19]", 0 ],
-			"obj-6::obj-2::obj-121::obj-60" : [ "button[44]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-214" : [ "number[54]", "number[7]", 0 ],
-			"obj-7::obj-2::obj-159" : [ "multislider[24]", "multislider[2]", 0 ],
-			"obj-8::obj-2::obj-243::obj-216" : [ "button[155]", "button[10]", 0 ],
-			"obj-8::obj-2::obj-156::obj-138" : [ "button[81]", "button[25]", 0 ],
-			"obj-7::obj-204" : [ "number[91]", "number[4]", 0 ],
-			"obj-6::obj-2::obj-159" : [ "multislider[22]", "multislider[2]", 0 ],
-			"obj-7::obj-2::obj-188::obj-66" : [ "button[68]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-188::obj-66" : [ "button[49]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-184" : [ "live.toggle[13]", "live.toggle", 0 ],
-			"obj-8::obj-2::obj-244::obj-17" : [ "button[160]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-243::obj-216" : [ "button[92]", "button[10]", 0 ],
-			"obj-5::obj-2::obj-251::obj-145" : [ "number[23]", "number[7]", 0 ],
-			"obj-5::obj-2::obj-201" : [ "number[19]", "number[19]", 0 ],
+			"obj-38::obj-12" : [ "live.button[6]", "live.button", 0 ],
+			"obj-38::obj-14" : [ "live.button[7]", "live.button", 0 ],
+			"obj-38::obj-16" : [ "live.button[4]", "live.button", 0 ],
+			"obj-38::obj-18" : [ "live.button[8]", "live.button", 0 ],
+			"obj-38::obj-21" : [ "button[116]", "button", 0 ],
+			"obj-38::obj-26" : [ "button[114]", "button", 0 ],
+			"obj-38::obj-27" : [ "button[117]", "button", 0 ],
+			"obj-38::obj-30" : [ "button[115]", "button", 0 ],
+			"obj-38::obj-35" : [ "button[118]", "button", 0 ],
+			"obj-38::obj-4" : [ "number[1]", "number[1]", 0 ],
+			"obj-38::obj-40" : [ "number[67]", "number", 0 ],
+			"obj-38::obj-41" : [ "number[70]", "number[70]", 0 ],
+			"obj-38::obj-48" : [ "number[71]", "number[71]", 0 ],
+			"obj-38::obj-49" : [ "number[72]", "number[72]", 0 ],
+			"obj-38::obj-50" : [ "number[5]", "number[5]", 0 ],
+			"obj-38::obj-58" : [ "button[120]", "button[120]", 0 ],
+			"obj-38::obj-6" : [ "live.button[3]", "live.button", 0 ],
+			"obj-5::obj-200" : [ "number[25]", "number[19]", 0 ],
+			"obj-5::obj-201" : [ "number[26]", "number[19]", 0 ],
+			"obj-5::obj-204" : [ "number[27]", "number[4]", 0 ],
+			"obj-5::obj-208" : [ "number[28]", "number[20]", 0 ],
 			"obj-5::obj-2::obj-101" : [ "number[85]", "number[2]", 0 ],
-			"obj-6::obj-2::obj-251::obj-225" : [ "number[41]", "number[7]", 0 ],
-			"obj-6::obj-2::obj-140" : [ "button[9]", "button[24]", 0 ],
-			"obj-7::obj-2::obj-241" : [ "multislider[28]", "multislider[7]", 0 ],
-			"obj-8::obj-2::obj-244::obj-226" : [ "number[107]", "number[26]", 0 ],
-			"obj-8::obj-2::obj-1::obj-144" : [ "number[65]", "number[8]", 0 ],
-			"obj-8::obj-2::obj-204" : [ "number[153]", "number[4]", 0 ],
-			"obj-7::obj-200" : [ "number[89]", "number[19]", 0 ],
-			"obj-6::obj-2::obj-244::obj-240" : [ "number[32]", "number[3]", 0 ],
-			"obj-6::obj-2::obj-113" : [ "button[56]", "button[22]", 0 ],
-			"obj-7::obj-2::obj-244::obj-226" : [ "number[145]", "number[26]", 0 ],
-			"obj-8::obj-2::obj-92" : [ "number[157]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-218" : [ "multislider[19]", "multislider", 0 ],
-			"obj-8::obj-2::obj-184" : [ "live.toggle[81]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-214" : [ "number[180]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-111" : [ "live.toggle[72]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-112" : [ "button[256]", "button[22]", 0 ],
+			"obj-5::obj-2::obj-113" : [ "button[216]", "button[22]", 0 ],
+			"obj-5::obj-2::obj-114" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-115" : [ "multislider[74]", "multislider[2]", 0 ],
+			"obj-5::obj-2::obj-121::obj-102" : [ "button[91]", "button", 0 ],
+			"obj-5::obj-2::obj-121::obj-119" : [ "button[90]", "button[1]", 0 ],
+			"obj-5::obj-2::obj-121::obj-216" : [ "button[5]", "button[10]", 0 ],
+			"obj-5::obj-2::obj-121::obj-60" : [ "button[6]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-121::obj-66" : [ "number[136]", "number[2]", 0 ],
+			"obj-5::obj-2::obj-123" : [ "button[148]", "button[18]", 0 ],
+			"obj-5::obj-2::obj-13" : [ "live.toggle[73]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-135" : [ "toggle", "toggle", 0 ],
+			"obj-5::obj-2::obj-140" : [ "button[24]", "button[24]", 0 ],
+			"obj-5::obj-2::obj-143::obj-17" : [ "button[31]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-143::obj-66" : [ "button[144]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-151" : [ "number", "number", 0 ],
+			"obj-5::obj-2::obj-153" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-156::obj-138" : [ "button[25]", "button[25]", 0 ],
+			"obj-5::obj-2::obj-156::obj-139" : [ "button[26]", "button[26]", 0 ],
+			"obj-5::obj-2::obj-156::obj-3" : [ "button[27]", "button[25]", 0 ],
 			"obj-5::obj-2::obj-156::obj-4" : [ "button[28]", "button[26]", 0 ],
-			"obj-5::obj-2::obj-238" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-5::obj-2::obj-217" : [ "number[21]", "number[7]", 0 ],
-			"obj-6::obj-2::obj-244::obj-17" : [ "button[41]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-115" : [ "multislider[76]", "multislider[2]", 0 ],
-			"obj-7::obj-2::obj-8" : [ "button[73]", "button[16]", 0 ],
-			"obj-9::obj-2::obj-135" : [ "toggle[4]", "toggle", 0 ],
-			"obj-9::obj-2::obj-199" : [ "swatch[8]", "swatch", 0 ],
-			"obj-6::obj-201" : [ "number[30]", "number[19]", 0 ],
-			"obj-9::obj-200" : [ "number[159]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-238" : [ "slider[5]", "slider[1]", 0 ],
-			"obj-8::obj-2::obj-8" : [ "button[161]", "button[16]", 0 ],
-			"obj-9::obj-2::obj-121::obj-66" : [ "number[168]", "number[2]", 0 ],
-			"obj-9::obj-2::obj-6" : [ "live.toggle[32]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-112" : [ "button[96]", "button[22]", 0 ],
-			"obj-6::obj-200" : [ "number[29]", "number[19]", 0 ],
-			"obj-8::obj-2::obj-111" : [ "live.toggle[25]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-217" : [ "number[175]", "number[7]", 0 ],
-			"obj-9::obj-2::obj-160" : [ "button[189]", "button[16]", 0 ],
-			"obj-9::obj-2::obj-249" : [ "multislider[37]", "multislider[9]", 0 ],
-			"obj-5::obj-2::obj-203" : [ "button[149]", "button[8]", 0 ],
-			"obj-7::obj-2::obj-156::obj-3" : [ "button[62]", "button[25]", 0 ],
-			"obj-8::obj-2::obj-6" : [ "live.toggle[80]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-123" : [ "button[183]", "button[18]", 0 ],
-			"obj-5::obj-2::obj-249" : [ "multislider[9]", "multislider[9]", 0 ],
+			"obj-5::obj-2::obj-159" : [ "multislider[20]", "multislider[2]", 0 ],
+			"obj-5::obj-2::obj-160" : [ "button[151]", "button[16]", 0 ],
+			"obj-5::obj-2::obj-166" : [ "live.toggle[74]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-174" : [ "multislider[21]", "multislider[2]", 0 ],
+			"obj-5::obj-2::obj-17::obj-103" : [ "button[257]", "button[21]", 0 ],
+			"obj-5::obj-2::obj-17::obj-92" : [ "number[48]", "number[2]", 0 ],
+			"obj-5::obj-2::obj-184" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-188::obj-66" : [ "button[38]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-191" : [ "multislider[75]", "multislider", 0 ],
 			"obj-5::obj-2::obj-199" : [ "swatch[5]", "swatch", 0 ],
-			"obj-6::obj-2::obj-251::obj-145" : [ "number[49]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-1::obj-144" : [ "number[135]", "number[8]", 0 ],
+			"obj-5::obj-2::obj-1::obj-39" : [ "number[133]", "number", 0 ],
+			"obj-5::obj-2::obj-200" : [ "number[22]", "number[19]", 0 ],
+			"obj-5::obj-2::obj-201" : [ "number[19]", "number[19]", 0 ],
+			"obj-5::obj-2::obj-203" : [ "button[149]", "button[8]", 0 ],
+			"obj-5::obj-2::obj-204" : [ "number[4]", "number[4]", 0 ],
+			"obj-5::obj-2::obj-208" : [ "number[20]", "number[20]", 0 ],
+			"obj-5::obj-2::obj-214" : [ "number[7]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-217" : [ "number[21]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-218" : [ "multislider", "multislider", 0 ],
+			"obj-5::obj-2::obj-234" : [ "slider", "slider", 0 ],
+			"obj-5::obj-2::obj-238" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-5::obj-2::obj-241" : [ "multislider[7]", "multislider[7]", 0 ],
+			"obj-5::obj-2::obj-243::obj-102" : [ "button[150]", "button", 0 ],
+			"obj-5::obj-2::obj-243::obj-119" : [ "button[1]", "button[1]", 0 ],
+			"obj-5::obj-2::obj-243::obj-216" : [ "button[92]", "button[10]", 0 ],
+			"obj-5::obj-2::obj-243::obj-36" : [ "button[35]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-243::obj-60" : [ "button[7]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-244::obj-167" : [ "number[83]", "number[2]", 0 ],
+			"obj-5::obj-2::obj-244::obj-17" : [ "button[13]", "button[7]", 0 ],
+			"obj-5::obj-2::obj-244::obj-222" : [ "number[143]", "number[26]", 0 ],
+			"obj-5::obj-2::obj-244::obj-226" : [ "number[142]", "number[26]", 0 ],
+			"obj-5::obj-2::obj-244::obj-229" : [ "number[141]", "number[3]", 0 ],
+			"obj-5::obj-2::obj-244::obj-240" : [ "number[140]", "number[3]", 0 ],
+			"obj-5::obj-2::obj-247" : [ "multislider[8]", "multislider[8]", 0 ],
+			"obj-5::obj-2::obj-249" : [ "multislider[9]", "multislider[9]", 0 ],
+			"obj-5::obj-2::obj-251::obj-145" : [ "number[23]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-251::obj-220" : [ "multislider[5]", "multislider[5]", 0 ],
+			"obj-5::obj-2::obj-251::obj-225" : [ "number[24]", "number[7]", 0 ],
+			"obj-5::obj-2::obj-26" : [ "number[84]", "number[1]", 0 ],
+			"obj-5::obj-2::obj-27" : [ "button[147]", "button[9]", 0 ],
+			"obj-5::obj-2::obj-37" : [ "live.toggle[75]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-39" : [ "live.toggle[6]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-6" : [ "live.toggle[76]", "live.toggle", 0 ],
+			"obj-5::obj-2::obj-8" : [ "button[145]", "button[16]", 0 ],
+			"obj-5::obj-2::obj-92" : [ "number[144]", "number[2]", 0 ],
+			"obj-6::obj-200" : [ "number[29]", "number[19]", 0 ],
+			"obj-6::obj-201" : [ "number[30]", "number[19]", 0 ],
+			"obj-6::obj-204" : [ "number[31]", "number[4]", 0 ],
+			"obj-6::obj-208" : [ "number[86]", "number[20]", 0 ],
+			"obj-6::obj-2::obj-101" : [ "number[53]", "number[2]", 0 ],
+			"obj-6::obj-2::obj-111" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-112" : [ "button[50]", "button[22]", 0 ],
+			"obj-6::obj-2::obj-113" : [ "button[56]", "button[22]", 0 ],
+			"obj-6::obj-2::obj-114" : [ "live.toggle[11]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-115" : [ "multislider[76]", "multislider[2]", 0 ],
+			"obj-6::obj-2::obj-121::obj-102" : [ "button[43]", "button", 0 ],
+			"obj-6::obj-2::obj-121::obj-119" : [ "button[42]", "button[1]", 0 ],
+			"obj-6::obj-2::obj-121::obj-216" : [ "button[45]", "button[10]", 0 ],
+			"obj-6::obj-2::obj-121::obj-60" : [ "button[44]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-121::obj-66" : [ "number[37]", "number[2]", 0 ],
+			"obj-6::obj-2::obj-123" : [ "button[55]", "button[18]", 0 ],
+			"obj-6::obj-2::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-135" : [ "toggle[1]", "toggle", 0 ],
+			"obj-6::obj-2::obj-140" : [ "button[9]", "button[24]", 0 ],
+			"obj-6::obj-2::obj-143::obj-17" : [ "button[8]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-143::obj-66" : [ "button[48]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-151" : [ "number[73]", "number", 0 ],
+			"obj-6::obj-2::obj-153" : [ "live.toggle[10]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-156::obj-138" : [ "button[3]", "button[25]", 0 ],
+			"obj-6::obj-2::obj-156::obj-139" : [ "button[4]", "button[26]", 0 ],
+			"obj-6::obj-2::obj-156::obj-3" : [ "button[47]", "button[25]", 0 ],
+			"obj-6::obj-2::obj-156::obj-4" : [ "button[2]", "button[26]", 0 ],
+			"obj-6::obj-2::obj-159" : [ "multislider[22]", "multislider[2]", 0 ],
+			"obj-6::obj-2::obj-160" : [ "button[54]", "button[16]", 0 ],
+			"obj-6::obj-2::obj-166" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-174" : [ "multislider[13]", "multislider[2]", 0 ],
+			"obj-6::obj-2::obj-17::obj-103" : [ "button[46]", "button[21]", 0 ],
+			"obj-6::obj-2::obj-17::obj-92" : [ "number[40]", "number[2]", 0 ],
+			"obj-6::obj-2::obj-184" : [ "live.toggle[13]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-188::obj-66" : [ "button[49]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-191" : [ "multislider[78]", "multislider", 0 ],
+			"obj-6::obj-2::obj-199" : [ "swatch[6]", "swatch", 0 ],
+			"obj-6::obj-2::obj-1::obj-144" : [ "number[39]", "number[8]", 0 ],
+			"obj-6::obj-2::obj-1::obj-39" : [ "number[38]", "number", 0 ],
+			"obj-6::obj-2::obj-200" : [ "number[51]", "number[19]", 0 ],
+			"obj-6::obj-2::obj-201" : [ "number[88]", "number[19]", 0 ],
+			"obj-6::obj-2::obj-203" : [ "button[51]", "button[8]", 0 ],
+			"obj-6::obj-2::obj-204" : [ "number[55]", "number[4]", 0 ],
 			"obj-6::obj-2::obj-208" : [ "number[56]", "number[20]", 0 ],
+			"obj-6::obj-2::obj-214" : [ "number[54]", "number[7]", 0 ],
+			"obj-6::obj-2::obj-217" : [ "number[87]", "number[7]", 0 ],
+			"obj-6::obj-2::obj-218" : [ "multislider[11]", "multislider", 0 ],
+			"obj-6::obj-2::obj-234" : [ "slider[2]", "slider", 0 ],
+			"obj-6::obj-2::obj-238" : [ "slider[3]", "slider[1]", 0 ],
+			"obj-6::obj-2::obj-241" : [ "multislider[12]", "multislider[7]", 0 ],
+			"obj-6::obj-2::obj-243::obj-102" : [ "button[39]", "button", 0 ],
+			"obj-6::obj-2::obj-243::obj-119" : [ "button[29]", "button[1]", 0 ],
+			"obj-6::obj-2::obj-243::obj-216" : [ "button[32]", "button[10]", 0 ],
+			"obj-6::obj-2::obj-243::obj-36" : [ "button[40]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-243::obj-60" : [ "button[33]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-244::obj-167" : [ "number[35]", "number[2]", 0 ],
+			"obj-6::obj-2::obj-244::obj-17" : [ "button[41]", "button[7]", 0 ],
+			"obj-6::obj-2::obj-244::obj-222" : [ "number[36]", "number[26]", 0 ],
+			"obj-6::obj-2::obj-244::obj-226" : [ "number[34]", "number[26]", 0 ],
+			"obj-6::obj-2::obj-244::obj-229" : [ "number[33]", "number[3]", 0 ],
+			"obj-6::obj-2::obj-244::obj-240" : [ "number[32]", "number[3]", 0 ],
+			"obj-6::obj-2::obj-247" : [ "multislider[79]", "multislider[8]", 0 ],
+			"obj-6::obj-2::obj-249" : [ "multislider[77]", "multislider[9]", 0 ],
+			"obj-6::obj-2::obj-251::obj-145" : [ "number[49]", "number[7]", 0 ],
+			"obj-6::obj-2::obj-251::obj-220" : [ "multislider[10]", "multislider[5]", 0 ],
+			"obj-6::obj-2::obj-251::obj-225" : [ "number[41]", "number[7]", 0 ],
+			"obj-6::obj-2::obj-26" : [ "number[52]", "number[1]", 0 ],
+			"obj-6::obj-2::obj-27" : [ "button[52]", "button[9]", 0 ],
+			"obj-6::obj-2::obj-37" : [ "live.toggle[77]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-39" : [ "live.toggle[78]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-6" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-6::obj-2::obj-8" : [ "button[53]", "button[16]", 0 ],
+			"obj-6::obj-2::obj-92" : [ "number[50]", "number[2]", 0 ],
+			"obj-7::obj-200" : [ "number[89]", "number[19]", 0 ],
+			"obj-7::obj-201" : [ "number[90]", "number[19]", 0 ],
+			"obj-7::obj-204" : [ "number[91]", "number[4]", 0 ],
+			"obj-7::obj-208" : [ "number[92]", "number[20]", 0 ],
+			"obj-7::obj-2::obj-101" : [ "number[61]", "number[2]", 0 ],
+			"obj-7::obj-2::obj-111" : [ "live.toggle[18]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-112" : [ "button[72]", "button[22]", 0 ],
+			"obj-7::obj-2::obj-113" : [ "button[69]", "button[22]", 0 ],
+			"obj-7::obj-2::obj-114" : [ "live.toggle[20]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-115" : [ "multislider[15]", "multislider[2]", 0 ],
+			"obj-7::obj-2::obj-121::obj-102" : [ "button[121]", "button", 0 ],
+			"obj-7::obj-2::obj-121::obj-119" : [ "button[94]", "button[1]", 0 ],
+			"obj-7::obj-2::obj-121::obj-216" : [ "button[123]", "button[10]", 0 ],
+			"obj-7::obj-2::obj-121::obj-60" : [ "button[122]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-121::obj-66" : [ "number[97]", "number[2]", 0 ],
+			"obj-7::obj-2::obj-123" : [ "button[70]", "button[18]", 0 ],
+			"obj-7::obj-2::obj-13" : [ "live.toggle[24]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-135" : [ "toggle[2]", "toggle", 0 ],
+			"obj-7::obj-2::obj-140" : [ "button[153]", "button[24]", 0 ],
+			"obj-7::obj-2::obj-143::obj-17" : [ "button[66]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-143::obj-66" : [ "button[67]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-151" : [ "number[99]", "number", 0 ],
+			"obj-7::obj-2::obj-153" : [ "live.toggle[21]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-156::obj-138" : [ "button[63]", "button[25]", 0 ],
+			"obj-7::obj-2::obj-156::obj-139" : [ "button[64]", "button[26]", 0 ],
+			"obj-7::obj-2::obj-156::obj-3" : [ "button[62]", "button[25]", 0 ],
+			"obj-7::obj-2::obj-156::obj-4" : [ "button[65]", "button[26]", 0 ],
+			"obj-7::obj-2::obj-159" : [ "multislider[24]", "multislider[2]", 0 ],
+			"obj-7::obj-2::obj-160" : [ "button[71]", "button[16]", 0 ],
+			"obj-7::obj-2::obj-166" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-174" : [ "multislider[25]", "multislider[2]", 0 ],
+			"obj-7::obj-2::obj-17::obj-103" : [ "button[124]", "button[21]", 0 ],
+			"obj-7::obj-2::obj-17::obj-92" : [ "number[147]", "number[2]", 0 ],
+			"obj-7::obj-2::obj-184" : [ "live.toggle[19]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-188::obj-66" : [ "button[68]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-191" : [ "multislider[29]", "multislider", 0 ],
+			"obj-7::obj-2::obj-199" : [ "swatch[1]", "swatch", 0 ],
+			"obj-7::obj-2::obj-1::obj-144" : [ "number[98]", "number[8]", 0 ],
+			"obj-7::obj-2::obj-1::obj-39" : [ "number[146]", "number", 0 ],
+			"obj-7::obj-2::obj-200" : [ "number[59]", "number[19]", 0 ],
+			"obj-7::obj-2::obj-201" : [ "number[62]", "number[19]", 0 ],
+			"obj-7::obj-2::obj-203" : [ "button[154]", "button[8]", 0 ],
+			"obj-7::obj-2::obj-204" : [ "number[101]", "number[4]", 0 ],
+			"obj-7::obj-2::obj-208" : [ "number[60]", "number[20]", 0 ],
+			"obj-7::obj-2::obj-214" : [ "number[102]", "number[7]", 0 ],
+			"obj-7::obj-2::obj-217" : [ "number[63]", "number[7]", 0 ],
+			"obj-7::obj-2::obj-218" : [ "multislider[27]", "multislider", 0 ],
+			"obj-7::obj-2::obj-234" : [ "slider[4]", "slider", 0 ],
+			"obj-7::obj-2::obj-238" : [ "slider[5]", "slider[1]", 0 ],
+			"obj-7::obj-2::obj-241" : [ "multislider[28]", "multislider[7]", 0 ],
+			"obj-7::obj-2::obj-243::obj-102" : [ "button[61]", "button", 0 ],
+			"obj-7::obj-2::obj-243::obj-119" : [ "button[60]", "button[1]", 0 ],
+			"obj-7::obj-2::obj-243::obj-216" : [ "button[58]", "button[10]", 0 ],
+			"obj-7::obj-2::obj-243::obj-36" : [ "button[57]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-243::obj-60" : [ "button[59]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-244::obj-167" : [ "number[96]", "number[2]", 0 ],
+			"obj-7::obj-2::obj-244::obj-17" : [ "button[93]", "button[7]", 0 ],
+			"obj-7::obj-2::obj-244::obj-222" : [ "number[94]", "number[26]", 0 ],
+			"obj-7::obj-2::obj-244::obj-226" : [ "number[145]", "number[26]", 0 ],
+			"obj-7::obj-2::obj-244::obj-229" : [ "number[95]", "number[3]", 0 ],
+			"obj-7::obj-2::obj-244::obj-240" : [ "number[93]", "number[3]", 0 ],
+			"obj-7::obj-2::obj-247" : [ "multislider[23]", "multislider[8]", 0 ],
+			"obj-7::obj-2::obj-249" : [ "multislider[26]", "multislider[9]", 0 ],
+			"obj-7::obj-2::obj-251::obj-145" : [ "number[58]", "number[7]", 0 ],
+			"obj-7::obj-2::obj-251::obj-220" : [ "multislider[14]", "multislider[5]", 0 ],
+			"obj-7::obj-2::obj-251::obj-225" : [ "number[57]", "number[7]", 0 ],
+			"obj-7::obj-2::obj-26" : [ "number[100]", "number[1]", 0 ],
+			"obj-7::obj-2::obj-27" : [ "button[152]", "button[9]", 0 ],
+			"obj-7::obj-2::obj-37" : [ "live.toggle[23]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-39" : [ "live.toggle[17]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-6" : [ "live.toggle[22]", "live.toggle", 0 ],
+			"obj-7::obj-2::obj-8" : [ "button[73]", "button[16]", 0 ],
+			"obj-7::obj-2::obj-92" : [ "number[74]", "number[2]", 0 ],
+			"obj-8::obj-200" : [ "number[103]", "number[19]", 0 ],
+			"obj-8::obj-201" : [ "number[104]", "number[19]", 0 ],
+			"obj-8::obj-204" : [ "number[105]", "number[4]", 0 ],
+			"obj-8::obj-208" : [ "number[106]", "number[20]", 0 ],
+			"obj-8::obj-2::obj-101" : [ "number[150]", "number[2]", 0 ],
+			"obj-8::obj-2::obj-111" : [ "live.toggle[25]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-112" : [ "button[86]", "button[22]", 0 ],
+			"obj-8::obj-2::obj-113" : [ "button[85]", "button[22]", 0 ],
+			"obj-8::obj-2::obj-114" : [ "live.toggle[27]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-115" : [ "multislider[81]", "multislider[2]", 0 ],
+			"obj-8::obj-2::obj-121::obj-102" : [ "button[75]", "button", 0 ],
+			"obj-8::obj-2::obj-121::obj-119" : [ "button[74]", "button[1]", 0 ],
+			"obj-8::obj-2::obj-121::obj-216" : [ "button[77]", "button[10]", 0 ],
+			"obj-8::obj-2::obj-121::obj-60" : [ "button[76]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-121::obj-66" : [ "number[64]", "number[2]", 0 ],
+			"obj-8::obj-2::obj-123" : [ "button[163]", "button[18]", 0 ],
+			"obj-8::obj-2::obj-13" : [ "live.toggle[82]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-135" : [ "toggle[3]", "toggle", 0 ],
+			"obj-8::obj-2::obj-140" : [ "button[162]", "button[24]", 0 ],
+			"obj-8::obj-2::obj-143::obj-17" : [ "button[83]", "button[7]", 0 ],
 			"obj-8::obj-2::obj-143::obj-66" : [ "button[84]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-151" : [ "number[155]", "number", 0 ],
+			"obj-8::obj-2::obj-153" : [ "live.toggle[79]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-156::obj-138" : [ "button[81]", "button[25]", 0 ],
+			"obj-8::obj-2::obj-156::obj-139" : [ "button[79]", "button[26]", 0 ],
+			"obj-8::obj-2::obj-156::obj-3" : [ "button[82]", "button[25]", 0 ],
+			"obj-8::obj-2::obj-156::obj-4" : [ "button[80]", "button[26]", 0 ],
+			"obj-8::obj-2::obj-159" : [ "multislider[82]", "multislider[2]", 0 ],
+			"obj-8::obj-2::obj-160" : [ "button[87]", "button[16]", 0 ],
+			"obj-8::obj-2::obj-166" : [ "live.toggle[84]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-174" : [ "multislider[80]", "multislider[2]", 0 ],
+			"obj-8::obj-2::obj-17::obj-103" : [ "button[78]", "button[21]", 0 ],
+			"obj-8::obj-2::obj-17::obj-92" : [ "number[113]", "number[2]", 0 ],
+			"obj-8::obj-2::obj-184" : [ "live.toggle[81]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-188::obj-66" : [ "button[95]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-191" : [ "multislider[30]", "multislider", 0 ],
+			"obj-8::obj-2::obj-199" : [ "swatch[7]", "swatch", 0 ],
+			"obj-8::obj-2::obj-1::obj-144" : [ "number[65]", "number[8]", 0 ],
+			"obj-8::obj-2::obj-1::obj-39" : [ "number[112]", "number", 0 ],
+			"obj-8::obj-2::obj-200" : [ "number[158]", "number[19]", 0 ],
+			"obj-8::obj-2::obj-201" : [ "number[68]", "number[19]", 0 ],
+			"obj-8::obj-2::obj-203" : [ "button[165]", "button[8]", 0 ],
+			"obj-8::obj-2::obj-204" : [ "number[153]", "number[4]", 0 ],
+			"obj-8::obj-2::obj-208" : [ "number[152]", "number[20]", 0 ],
+			"obj-8::obj-2::obj-214" : [ "number[156]", "number[7]", 0 ],
+			"obj-8::obj-2::obj-217" : [ "number[151]", "number[7]", 0 ],
+			"obj-8::obj-2::obj-218" : [ "multislider[19]", "multislider", 0 ],
+			"obj-8::obj-2::obj-234" : [ "slider[7]", "slider", 0 ],
+			"obj-8::obj-2::obj-238" : [ "slider[6]", "slider[1]", 0 ],
+			"obj-8::obj-2::obj-241" : [ "multislider[31]", "multislider[7]", 0 ],
+			"obj-8::obj-2::obj-243::obj-102" : [ "button[159]", "button", 0 ],
+			"obj-8::obj-2::obj-243::obj-119" : [ "button[158]", "button[1]", 0 ],
+			"obj-8::obj-2::obj-243::obj-216" : [ "button[155]", "button[10]", 0 ],
+			"obj-8::obj-2::obj-243::obj-36" : [ "button[157]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-243::obj-60" : [ "button[156]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-244::obj-167" : [ "number[108]", "number[2]", 0 ],
+			"obj-8::obj-2::obj-244::obj-17" : [ "button[160]", "button[7]", 0 ],
+			"obj-8::obj-2::obj-244::obj-222" : [ "number[110]", "number[26]", 0 ],
+			"obj-8::obj-2::obj-244::obj-226" : [ "number[107]", "number[26]", 0 ],
+			"obj-8::obj-2::obj-244::obj-229" : [ "number[111]", "number[3]", 0 ],
+			"obj-8::obj-2::obj-244::obj-240" : [ "number[109]", "number[3]", 0 ],
+			"obj-8::obj-2::obj-247" : [ "multislider[18]", "multislider[8]", 0 ],
+			"obj-8::obj-2::obj-249" : [ "multislider[17]", "multislider[9]", 0 ],
+			"obj-8::obj-2::obj-251::obj-145" : [ "number[148]", "number[7]", 0 ],
+			"obj-8::obj-2::obj-251::obj-220" : [ "multislider[16]", "multislider[5]", 0 ],
+			"obj-8::obj-2::obj-251::obj-225" : [ "number[149]", "number[7]", 0 ],
+			"obj-8::obj-2::obj-26" : [ "number[154]", "number[1]", 0 ],
+			"obj-8::obj-2::obj-27" : [ "button[164]", "button[9]", 0 ],
+			"obj-8::obj-2::obj-37" : [ "live.toggle[83]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-39" : [ "live.toggle[26]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-6" : [ "live.toggle[80]", "live.toggle", 0 ],
+			"obj-8::obj-2::obj-8" : [ "button[161]", "button[16]", 0 ],
+			"obj-8::obj-2::obj-92" : [ "number[157]", "number[2]", 0 ],
+			"obj-9::obj-200" : [ "number[159]", "number[19]", 0 ],
+			"obj-9::obj-201" : [ "number[160]", "number[19]", 0 ],
+			"obj-9::obj-204" : [ "number[161]", "number[4]", 0 ],
+			"obj-9::obj-208" : [ "number[162]", "number[20]", 0 ],
+			"obj-9::obj-2::obj-101" : [ "number[177]", "number[2]", 0 ],
+			"obj-9::obj-2::obj-111" : [ "live.toggle[30]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-112" : [ "button[96]", "button[22]", 0 ],
+			"obj-9::obj-2::obj-113" : [ "button[188]", "button[22]", 0 ],
+			"obj-9::obj-2::obj-114" : [ "live.toggle[35]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-115" : [ "multislider[36]", "multislider[2]", 0 ],
+			"obj-9::obj-2::obj-121::obj-102" : [ "button[172]", "button", 0 ],
+			"obj-9::obj-2::obj-121::obj-119" : [ "button[175]", "button[1]", 0 ],
+			"obj-9::obj-2::obj-121::obj-216" : [ "button[173]", "button[10]", 0 ],
+			"obj-9::obj-2::obj-121::obj-60" : [ "button[174]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-121::obj-66" : [ "number[168]", "number[2]", 0 ],
+			"obj-9::obj-2::obj-123" : [ "button[183]", "button[18]", 0 ],
+			"obj-9::obj-2::obj-13" : [ "live.toggle[31]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-135" : [ "toggle[4]", "toggle", 0 ],
+			"obj-9::obj-2::obj-140" : [ "button[187]", "button[24]", 0 ],
+			"obj-9::obj-2::obj-143::obj-17" : [ "button[181]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-143::obj-66" : [ "button[182]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-151" : [ "number[116]", "number", 0 ],
+			"obj-9::obj-2::obj-153" : [ "live.toggle[29]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-156::obj-138" : [ "button[177]", "button[25]", 0 ],
+			"obj-9::obj-2::obj-156::obj-139" : [ "button[178]", "button[26]", 0 ],
+			"obj-9::obj-2::obj-156::obj-3" : [ "button[179]", "button[25]", 0 ],
+			"obj-9::obj-2::obj-156::obj-4" : [ "button[180]", "button[26]", 0 ],
+			"obj-9::obj-2::obj-159" : [ "multislider[33]", "multislider[2]", 0 ],
+			"obj-9::obj-2::obj-160" : [ "button[189]", "button[16]", 0 ],
+			"obj-9::obj-2::obj-166" : [ "live.toggle[36]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-174" : [ "multislider[35]", "multislider[2]", 0 ],
+			"obj-9::obj-2::obj-17::obj-103" : [ "button[176]", "button[21]", 0 ],
+			"obj-9::obj-2::obj-17::obj-92" : [ "number[171]", "number[2]", 0 ],
+			"obj-9::obj-2::obj-184" : [ "live.toggle[33]", "live.toggle", 0 ],
 			"obj-9::obj-2::obj-188::obj-66" : [ "button[258]", "button[7]", 0 ],
 			"obj-9::obj-2::obj-191" : [ "multislider[40]", "multislider", 0 ],
-			"obj-5::obj-201" : [ "number[26]", "number[19]", 0 ],
-			"obj-7::obj-201" : [ "number[90]", "number[19]", 0 ],
-			"obj-5::obj-2::obj-123" : [ "button[148]", "button[18]", 0 ],
-			"obj-5::obj-2::obj-184" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-244::obj-222" : [ "number[36]", "number[26]", 0 ],
-			"obj-8::obj-2::obj-244::obj-240" : [ "number[109]", "number[3]", 0 ],
-			"obj-8::obj-2::obj-214" : [ "number[156]", "number[7]", 0 ],
-			"obj-9::obj-2::obj-244::obj-17" : [ "button[171]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-244::obj-226" : [ "number[142]", "number[26]", 0 ],
-			"obj-5::obj-2::obj-114" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-191" : [ "multislider[78]", "multislider", 0 ],
-			"obj-6::obj-2::obj-200" : [ "number[51]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-166" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-121::obj-119" : [ "button[175]", "button[1]", 0 ],
-			"obj-38::obj-30" : [ "button[115]", "button", 0 ],
-			"obj-5::obj-2::obj-39" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-234" : [ "slider[2]", "slider", 0 ],
-			"obj-6::obj-2::obj-151" : [ "number[73]", "number", 0 ],
-			"obj-7::obj-2::obj-156::obj-139" : [ "button[64]", "button[26]", 0 ],
-			"obj-7::obj-2::obj-174" : [ "multislider[25]", "multislider[2]", 0 ],
-			"obj-8::obj-2::obj-174" : [ "multislider[80]", "multislider[2]", 0 ],
-			"obj-9::obj-2::obj-121::obj-102" : [ "button[172]", "button", 0 ],
-			"obj-5::obj-2::obj-191" : [ "multislider[75]", "multislider", 0 ],
-			"obj-5::obj-2::obj-111" : [ "live.toggle[72]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-156::obj-3" : [ "button[47]", "button[25]", 0 ],
-			"obj-6::obj-2::obj-13" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-121::obj-66" : [ "number[97]", "number[2]", 0 ],
-			"obj-7::obj-2::obj-115" : [ "multislider[15]", "multislider[2]", 0 ],
-			"obj-8::obj-200" : [ "number[103]", "number[19]", 0 ],
-			"obj-5::obj-2::obj-121::obj-66" : [ "number[136]", "number[2]", 0 ],
-			"obj-6::obj-2::obj-243::obj-216" : [ "button[32]", "button[10]", 0 ],
-			"obj-7::obj-2::obj-17::obj-103" : [ "button[124]", "button[21]", 0 ],
-			"obj-7::obj-2::obj-156::obj-4" : [ "button[65]", "button[26]", 0 ],
-			"obj-7::obj-2::obj-200" : [ "number[59]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-217" : [ "number[63]", "number[7]", 0 ],
-			"obj-9::obj-2::obj-234" : [ "slider[9]", "slider", 0 ],
-			"obj-38::obj-14" : [ "live.button[7]", "live.button", 0 ],
-			"obj-5::obj-208" : [ "number[28]", "number[20]", 0 ],
-			"obj-6::obj-2::obj-27" : [ "button[52]", "button[9]", 0 ],
-			"obj-7::obj-2::obj-17::obj-92" : [ "number[147]", "number[2]", 0 ],
-			"obj-7::obj-2::obj-13" : [ "live.toggle[24]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-101" : [ "number[61]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-238" : [ "slider[6]", "slider[1]", 0 ],
-			"obj-5::obj-2::obj-1::obj-39" : [ "number[133]", "number", 0 ],
-			"obj-6::obj-2::obj-243::obj-60" : [ "button[33]", "button[7]", 0 ],
-			"obj-7::obj-2::obj-112" : [ "button[72]", "button[22]", 0 ],
-			"obj-8::obj-2::obj-27" : [ "button[164]", "button[9]", 0 ],
-			"obj-9::obj-2::obj-8" : [ "button[184]", "button[16]", 0 ],
-			"obj-38::obj-12" : [ "live.button[6]", "live.button", 0 ],
-			"obj-5::obj-2::obj-121::obj-216" : [ "button[5]", "button[10]", 0 ],
-			"obj-5::obj-2::obj-135" : [ "toggle", "toggle", 0 ],
-			"obj-5::obj-2::obj-6" : [ "live.toggle[76]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-247" : [ "multislider[79]", "multislider[8]", 0 ],
-			"obj-7::obj-2::obj-244::obj-222" : [ "number[94]", "number[26]", 0 ],
-			"obj-8::obj-2::obj-244::obj-167" : [ "number[108]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-241" : [ "multislider[31]", "multislider[7]", 0 ],
-			"obj-9::obj-2::obj-111" : [ "live.toggle[30]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-243::obj-102" : [ "button[39]", "button", 0 ],
-			"obj-8::obj-2::obj-121::obj-216" : [ "button[77]", "button[10]", 0 ],
-			"obj-8::obj-2::obj-159" : [ "multislider[82]", "multislider[2]", 0 ],
-			"obj-9::obj-2::obj-140" : [ "button[187]", "button[24]", 0 ],
-			"obj-7::obj-208" : [ "number[92]", "number[20]", 0 ],
-			"obj-5::obj-2::obj-243::obj-36" : [ "button[35]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-247" : [ "multislider[8]", "multislider[8]", 0 ],
-			"obj-6::obj-2::obj-135" : [ "toggle[1]", "toggle", 0 ],
-			"obj-7::obj-2::obj-92" : [ "number[74]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-188::obj-66" : [ "button[95]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-249" : [ "multislider[17]", "multislider[9]", 0 ],
-			"obj-38::obj-58" : [ "button[120]", "button[120]", 0 ],
-			"obj-5::obj-200" : [ "number[25]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-244::obj-240" : [ "number[93]", "number[3]", 0 ],
-			"obj-7::obj-2::obj-39" : [ "live.toggle[17]", "live.toggle", 0 ],
-			"obj-8::obj-2::obj-217" : [ "number[151]", "number[7]", 0 ],
-			"obj-8::obj-2::obj-37" : [ "live.toggle[83]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-244::obj-222" : [ "number[167]", "number[26]", 0 ],
-			"obj-38::obj-50" : [ "number[5]", "number[5]", 0 ],
-			"obj-5::obj-2::obj-140" : [ "button[24]", "button[24]", 0 ],
-			"obj-5::obj-2::obj-151" : [ "number", "number", 0 ],
-			"obj-7::obj-2::obj-243::obj-60" : [ "button[59]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-153" : [ "live.toggle[79]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-247" : [ "multislider[34]", "multislider[8]", 0 ],
-			"obj-38::obj-16" : [ "live.button[4]", "live.button", 0 ],
-			"obj-6::obj-2::obj-121::obj-119" : [ "button[42]", "button[1]", 0 ],
-			"obj-7::obj-2::obj-251::obj-225" : [ "number[57]", "number[7]", 0 ],
-			"obj-8::obj-2::obj-156::obj-3" : [ "button[82]", "button[25]", 0 ],
-			"obj-8::obj-2::obj-251::obj-145" : [ "number[148]", "number[7]", 0 ],
-			"obj-9::obj-2::obj-143::obj-17" : [ "button[181]", "button[7]", 0 ],
-			"obj-38::obj-4" : [ "number[1]", "number[1]", 0 ],
-			"obj-5::obj-2::obj-17::obj-92" : [ "number[48]", "number[2]", 0 ],
-			"obj-6::obj-2::obj-121::obj-66" : [ "number[37]", "number[2]", 0 ],
-			"obj-38::obj-6" : [ "live.button[3]", "live.button", 0 ],
-			"obj-5::obj-204" : [ "number[27]", "number[4]", 0 ],
-			"obj-5::obj-2::obj-115" : [ "multislider[74]", "multislider[2]", 0 ],
-			"obj-5::obj-2::obj-218" : [ "multislider", "multislider", 0 ],
-			"obj-6::obj-2::obj-17::obj-103" : [ "button[46]", "button[21]", 0 ],
-			"obj-6::obj-2::obj-204" : [ "number[55]", "number[4]", 0 ],
-			"obj-7::obj-2::obj-114" : [ "live.toggle[20]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-151" : [ "number[99]", "number", 0 ],
-			"obj-7::obj-2::obj-140" : [ "button[153]", "button[24]", 0 ],
+			"obj-9::obj-2::obj-199" : [ "swatch[8]", "swatch", 0 ],
 			"obj-9::obj-2::obj-1::obj-144" : [ "number[170]", "number[8]", 0 ],
-			"obj-5::obj-2::obj-26" : [ "number[84]", "number[1]", 0 ],
-			"obj-5::obj-2::obj-166" : [ "live.toggle[74]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-17::obj-92" : [ "number[40]", "number[2]", 0 ],
-			"obj-9::obj-2::obj-243::obj-216" : [ "button[166]", "button[10]", 0 ],
-			"obj-9::obj-2::obj-244::obj-226" : [ "number[163]", "number[26]", 0 ],
-			"obj-9::obj-2::obj-174" : [ "multislider[35]", "multislider[2]", 0 ],
-			"obj-9::obj-2::obj-26" : [ "number[179]", "number[1]", 0 ],
-			"obj-5::obj-2::obj-244::obj-167" : [ "number[83]", "number[2]", 0 ],
-			"obj-6::obj-2::obj-156::obj-139" : [ "button[4]", "button[26]", 0 ],
-			"obj-6::obj-2::obj-112" : [ "button[50]", "button[22]", 0 ],
-			"obj-7::obj-2::obj-208" : [ "number[60]", "number[20]", 0 ],
-			"obj-8::obj-2::obj-143::obj-17" : [ "button[83]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-151" : [ "number[155]", "number", 0 ],
-			"obj-9::obj-2::obj-17::obj-103" : [ "button[176]", "button[21]", 0 ],
-			"obj-5::obj-2::obj-204" : [ "number[4]", "number[4]", 0 ],
-			"obj-7::obj-2::obj-26" : [ "number[100]", "number[1]", 0 ],
-			"obj-8::obj-2::obj-191" : [ "multislider[30]", "multislider", 0 ],
-			"obj-9::obj-2::obj-204" : [ "number[178]", "number[4]", 0 ],
-			"obj-38::obj-49" : [ "number[72]", "number[72]", 0 ],
-			"obj-9::obj-208" : [ "number[162]", "number[20]", 0 ],
-			"obj-5::obj-2::obj-188::obj-66" : [ "button[38]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-37" : [ "live.toggle[77]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-160" : [ "button[54]", "button[16]", 0 ],
-			"obj-7::obj-2::obj-214" : [ "number[102]", "number[7]", 0 ],
-			"obj-8::obj-2::obj-156::obj-139" : [ "button[79]", "button[26]", 0 ],
-			"obj-8::obj-2::obj-140" : [ "button[162]", "button[24]", 0 ],
-			"obj-9::obj-2::obj-243::obj-60" : [ "button[167]", "button[7]", 0 ],
-			"obj-9::obj-2::obj-251::obj-145" : [ "number[172]", "number[7]", 0 ],
-			"obj-5::obj-2::obj-121::obj-102" : [ "button[91]", "button", 0 ],
-			"obj-5::obj-2::obj-156::obj-139" : [ "button[26]", "button[26]", 0 ],
-			"obj-6::obj-2::obj-249" : [ "multislider[77]", "multislider[9]", 0 ],
-			"obj-7::obj-2::obj-123" : [ "button[70]", "button[18]", 0 ],
-			"obj-9::obj-2::obj-208" : [ "number[115]", "number[20]", 0 ],
-			"obj-9::obj-2::obj-39" : [ "live.toggle[28]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-92" : [ "number[176]", "number[2]", 0 ],
-			"obj-5::obj-2::obj-8" : [ "button[145]", "button[16]", 0 ],
-			"obj-6::obj-2::obj-238" : [ "slider[3]", "slider[1]", 0 ],
-			"obj-7::obj-2::obj-243::obj-216" : [ "button[58]", "button[10]", 0 ],
-			"obj-7::obj-2::obj-244::obj-17" : [ "button[93]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-243::obj-36" : [ "button[157]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-199" : [ "swatch[7]", "swatch", 0 ],
-			"obj-9::obj-2::obj-143::obj-66" : [ "button[182]", "button[7]", 0 ],
-			"obj-9::obj-2::obj-251::obj-220" : [ "multislider[32]", "multislider[5]", 0 ],
-			"obj-38::obj-21" : [ "button[116]", "button", 0 ],
-			"obj-8::obj-208" : [ "number[106]", "number[20]", 0 ],
-			"obj-5::obj-2::obj-174" : [ "multislider[21]", "multislider[2]", 0 ],
-			"obj-7::obj-2::obj-37" : [ "live.toggle[23]", "live.toggle", 0 ],
-			"obj-8::obj-2::obj-200" : [ "number[158]", "number[19]", 0 ],
-			"obj-9::obj-2::obj-184" : [ "live.toggle[33]", "live.toggle", 0 ],
-			"obj-5::obj-2::obj-156::obj-3" : [ "button[27]", "button[25]", 0 ],
-			"obj-5::obj-2::obj-112" : [ "button[256]", "button[22]", 0 ],
-			"obj-5::obj-2::obj-159" : [ "multislider[20]", "multislider[2]", 0 ],
-			"obj-6::obj-2::obj-244::obj-167" : [ "number[35]", "number[2]", 0 ],
-			"obj-7::obj-2::obj-121::obj-102" : [ "button[121]", "button", 0 ],
-			"obj-7::obj-2::obj-156::obj-138" : [ "button[63]", "button[25]", 0 ],
-			"obj-8::obj-2::obj-244::obj-222" : [ "number[110]", "number[26]", 0 ],
-			"obj-9::obj-2::obj-243::obj-102" : [ "button[170]", "button", 0 ],
-			"obj-38::obj-27" : [ "button[117]", "button", 0 ],
-			"obj-5::obj-2::obj-243::obj-102" : [ "button[150]", "button", 0 ],
-			"obj-5::obj-2::obj-244::obj-229" : [ "number[141]", "number[3]", 0 ],
-			"obj-5::obj-2::obj-241" : [ "multislider[7]", "multislider[7]", 0 ],
-			"obj-9::obj-2::obj-121::obj-60" : [ "button[174]", "button[7]", 0 ],
-			"obj-9::obj-2::obj-153" : [ "live.toggle[29]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-37" : [ "live.toggle[34]", "live.toggle", 0 ],
-			"obj-38::obj-26" : [ "button[114]", "button", 0 ],
-			"obj-6::obj-2::obj-1::obj-39" : [ "number[38]", "number", 0 ],
-			"obj-6::obj-2::obj-201" : [ "number[88]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-184" : [ "live.toggle[19]", "live.toggle", 0 ],
-			"obj-8::obj-2::obj-121::obj-60" : [ "button[76]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-123" : [ "button[163]", "button[18]", 0 ],
-			"obj-9::obj-2::obj-200" : [ "number[114]", "number[19]", 0 ],
-			"obj-38::obj-18" : [ "live.button[8]", "live.button", 0 ],
-			"obj-5::obj-2::obj-143::obj-17" : [ "button[31]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-251::obj-225" : [ "number[24]", "number[7]", 0 ],
-			"obj-6::obj-2::obj-101" : [ "number[53]", "number[2]", 0 ],
-			"obj-7::obj-2::obj-1::obj-144" : [ "number[98]", "number[8]", 0 ],
-			"obj-7::obj-2::obj-249" : [ "multislider[26]", "multislider[9]", 0 ],
-			"obj-8::obj-2::obj-243::obj-119" : [ "button[158]", "button[1]", 0 ],
-			"obj-8::obj-2::obj-17::obj-103" : [ "button[78]", "button[21]", 0 ],
-			"obj-8::obj-2::obj-203" : [ "button[165]", "button[8]", 0 ],
-			"obj-6::obj-208" : [ "number[86]", "number[20]", 0 ],
-			"obj-5::obj-2::obj-153" : [ "live.toggle[7]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-121::obj-216" : [ "button[123]", "button[10]", 0 ],
-			"obj-7::obj-2::obj-143::obj-17" : [ "button[66]", "button[7]", 0 ],
-			"obj-7::obj-2::obj-247" : [ "multislider[23]", "multislider[8]", 0 ],
-			"obj-9::obj-2::obj-156::obj-3" : [ "button[179]", "button[25]", 0 ],
-			"obj-9::obj-2::obj-151" : [ "number[116]", "number", 0 ],
-			"obj-9::obj-2::obj-238" : [ "slider[8]", "slider[1]", 0 ],
-			"obj-6::obj-204" : [ "number[31]", "number[4]", 0 ],
-			"obj-6::obj-2::obj-143::obj-66" : [ "button[48]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-251::obj-220" : [ "multislider[10]", "multislider[5]", 0 ],
-			"obj-7::obj-2::obj-244::obj-167" : [ "number[96]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-17::obj-92" : [ "number[113]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-115" : [ "multislider[81]", "multislider[2]", 0 ],
-			"obj-5::obj-2::obj-200" : [ "number[22]", "number[19]", 0 ],
-			"obj-7::obj-2::obj-201" : [ "number[62]", "number[19]", 0 ],
-			"obj-9::obj-2::obj-244::obj-167" : [ "number[164]", "number[2]", 0 ],
-			"obj-9::obj-2::obj-166" : [ "live.toggle[36]", "live.toggle", 0 ],
-			"obj-5::obj-2::obj-27" : [ "button[147]", "button[9]", 0 ],
-			"obj-6::obj-2::obj-8" : [ "button[53]", "button[16]", 0 ],
-			"obj-7::obj-2::obj-1::obj-39" : [ "number[146]", "number", 0 ],
-			"obj-7::obj-2::obj-135" : [ "toggle[2]", "toggle", 0 ],
-			"obj-9::obj-2::obj-251::obj-225" : [ "number[173]", "number[7]", 0 ],
-			"obj-6::obj-2::obj-244::obj-229" : [ "number[33]", "number[3]", 0 ],
-			"obj-7::obj-2::obj-160" : [ "button[71]", "button[16]", 0 ],
-			"obj-8::obj-2::obj-135" : [ "toggle[3]", "toggle", 0 ],
-			"obj-6::obj-2::obj-114" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-234" : [ "slider[4]", "slider", 0 ],
-			"obj-8::obj-2::obj-251::obj-220" : [ "multislider[16]", "multislider[5]", 0 ],
-			"obj-9::obj-2::obj-243::obj-36" : [ "button[168]", "button[7]", 0 ],
-			"obj-9::obj-2::obj-201" : [ "number[174]", "number[19]", 0 ],
-			"obj-9::obj-201" : [ "number[160]", "number[19]", 0 ],
-			"obj-5::obj-2::obj-243::obj-60" : [ "button[7]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-243::obj-36" : [ "button[40]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-121::obj-102" : [ "button[75]", "button", 0 ],
-			"obj-7::obj-2::obj-243::obj-36" : [ "button[57]", "button[7]", 0 ],
-			"obj-7::obj-2::obj-121::obj-119" : [ "button[94]", "button[1]", 0 ],
-			"obj-7::obj-2::obj-218" : [ "multislider[27]", "multislider", 0 ],
-			"obj-8::obj-2::obj-13" : [ "live.toggle[82]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-243::obj-119" : [ "button[169]", "button[1]", 0 ],
-			"obj-6::obj-2::obj-143::obj-17" : [ "button[8]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-156::obj-4" : [ "button[80]", "button[26]", 0 ],
-			"obj-8::obj-2::obj-114" : [ "live.toggle[27]", "live.toggle", 0 ],
-			"obj-9::obj-2::obj-156::obj-4" : [ "button[180]", "button[26]", 0 ],
-			"obj-9::obj-2::obj-241" : [ "multislider[38]", "multislider[7]", 0 ],
-			"obj-8::obj-204" : [ "number[105]", "number[4]", 0 ],
-			"obj-5::obj-2::obj-251::obj-220" : [ "multislider[5]", "multislider[5]", 0 ],
-			"obj-6::obj-2::obj-39" : [ "live.toggle[78]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-243::obj-102" : [ "button[61]", "button", 0 ],
-			"obj-7::obj-2::obj-251::obj-220" : [ "multislider[14]", "multislider[5]", 0 ],
-			"obj-8::obj-2::obj-201" : [ "number[68]", "number[19]", 0 ],
-			"obj-9::obj-2::obj-244::obj-240" : [ "number[165]", "number[3]", 0 ],
-			"obj-9::obj-2::obj-203" : [ "button[186]", "button[8]", 0 ],
-			"obj-5::obj-2::obj-17::obj-103" : [ "button[257]", "button[21]", 0 ],
-			"obj-5::obj-2::obj-37" : [ "live.toggle[75]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-92" : [ "number[50]", "number[2]", 0 ],
-			"obj-7::obj-2::obj-111" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-8::obj-2::obj-39" : [ "live.toggle[26]", "live.toggle", 0 ],
-			"obj-5::obj-2::obj-244::obj-17" : [ "button[13]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-13" : [ "live.toggle[73]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-1::obj-144" : [ "number[39]", "number[8]", 0 ],
-			"obj-6::obj-2::obj-156::obj-138" : [ "button[3]", "button[25]", 0 ],
-			"obj-8::obj-2::obj-160" : [ "button[87]", "button[16]", 0 ],
-			"obj-9::obj-2::obj-218" : [ "multislider[39]", "multislider", 0 ],
-			"obj-9::obj-2::obj-114" : [ "live.toggle[35]", "live.toggle", 0 ],
-			"obj-38::obj-41" : [ "number[70]", "number[70]", 0 ],
-			"obj-5::obj-2::obj-244::obj-222" : [ "number[143]", "number[26]", 0 ],
-			"obj-6::obj-2::obj-121::obj-216" : [ "button[45]", "button[10]", 0 ],
-			"obj-6::obj-2::obj-166" : [ "live.toggle[14]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-204" : [ "number[101]", "number[4]", 0 ],
-			"obj-7::obj-2::obj-27" : [ "button[152]", "button[9]", 0 ],
-			"obj-8::obj-2::obj-251::obj-225" : [ "number[149]", "number[7]", 0 ],
-			"obj-5::obj-2::obj-234" : [ "slider", "slider", 0 ],
-			"obj-7::obj-2::obj-143::obj-66" : [ "button[67]", "button[7]", 0 ],
-			"obj-7::obj-2::obj-251::obj-145" : [ "number[58]", "number[7]", 0 ],
-			"obj-8::obj-2::obj-121::obj-66" : [ "number[64]", "number[2]", 0 ],
-			"obj-8::obj-2::obj-208" : [ "number[152]", "number[20]", 0 ],
-			"obj-8::obj-2::obj-247" : [ "multislider[18]", "multislider[8]", 0 ],
-			"obj-9::obj-2::obj-121::obj-216" : [ "button[173]", "button[10]", 0 ],
-			"obj-9::obj-2::obj-113" : [ "button[188]", "button[22]", 0 ],
-			"obj-38::obj-48" : [ "number[71]", "number[71]", 0 ],
-			"obj-5::obj-2::obj-121::obj-60" : [ "button[6]", "button[7]", 0 ],
-			"obj-5::obj-2::obj-214" : [ "number[7]", "number[7]", 0 ],
-			"obj-5::obj-2::obj-160" : [ "button[151]", "button[16]", 0 ],
-			"obj-6::obj-2::obj-203" : [ "button[51]", "button[8]", 0 ],
-			"obj-6::obj-2::obj-241" : [ "multislider[12]", "multislider[7]", 0 ],
-			"obj-8::obj-2::obj-101" : [ "number[150]", "number[2]", 0 ],
-			"obj-9::obj-2::obj-17::obj-92" : [ "number[171]", "number[2]", 0 ],
-			"obj-9::obj-2::obj-156::obj-138" : [ "button[177]", "button[25]", 0 ],
-			"obj-5::obj-2::obj-121::obj-119" : [ "button[90]", "button[1]", 0 ],
-			"obj-6::obj-2::obj-243::obj-119" : [ "button[29]", "button[1]", 0 ],
-			"obj-6::obj-2::obj-156::obj-4" : [ "button[2]", "button[26]", 0 ],
-			"obj-7::obj-2::obj-113" : [ "button[69]", "button[22]", 0 ],
-			"obj-5::obj-2::obj-92" : [ "number[144]", "number[2]", 0 ],
-			"obj-6::obj-2::obj-153" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-123" : [ "button[55]", "button[18]", 0 ],
-			"obj-7::obj-2::obj-203" : [ "button[154]", "button[8]", 0 ],
-			"obj-8::obj-2::obj-243::obj-60" : [ "button[156]", "button[7]", 0 ],
-			"obj-8::obj-2::obj-1::obj-39" : [ "number[112]", "number", 0 ],
-			"obj-8::obj-2::obj-113" : [ "button[85]", "button[22]", 0 ],
-			"obj-5::obj-2::obj-1::obj-144" : [ "number[135]", "number[8]", 0 ],
-			"obj-5::obj-2::obj-143::obj-66" : [ "button[144]", "button[7]", 0 ],
-			"obj-6::obj-2::obj-121::obj-102" : [ "button[43]", "button", 0 ],
-			"obj-6::obj-2::obj-217" : [ "number[87]", "number[7]", 0 ],
-			"obj-6::obj-2::obj-6" : [ "live.toggle[12]", "live.toggle", 0 ],
-			"obj-6::obj-2::obj-26" : [ "number[52]", "number[1]", 0 ],
-			"obj-7::obj-2::obj-244::obj-229" : [ "number[95]", "number[3]", 0 ],
-			"obj-8::obj-2::obj-121::obj-119" : [ "button[74]", "button[1]", 0 ],
-			"obj-9::obj-2::obj-244::obj-229" : [ "number[166]", "number[3]", 0 ],
-			"obj-9::obj-2::obj-27" : [ "button[185]", "button[9]", 0 ],
-			"obj-5::obj-2::obj-243::obj-119" : [ "button[1]", "button[1]", 0 ],
-			"obj-5::obj-2::obj-113" : [ "button[216]", "button[22]", 0 ],
-			"obj-6::obj-2::obj-199" : [ "swatch[6]", "swatch", 0 ],
-			"obj-8::obj-2::obj-244::obj-229" : [ "number[111]", "number[3]", 0 ],
-			"obj-9::obj-2::obj-159" : [ "multislider[33]", "multislider[2]", 0 ],
-			"obj-9::obj-2::obj-13" : [ "live.toggle[31]", "live.toggle", 0 ],
-			"obj-5::obj-2::obj-244::obj-240" : [ "number[140]", "number[3]", 0 ],
-			"obj-6::obj-2::obj-218" : [ "multislider[11]", "multislider", 0 ],
-			"obj-7::obj-2::obj-6" : [ "live.toggle[22]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-199" : [ "swatch[1]", "swatch", 0 ],
-			"obj-8::obj-2::obj-26" : [ "number[154]", "number[1]", 0 ],
-			"obj-9::obj-2::obj-101" : [ "number[177]", "number[2]", 0 ],
-			"obj-38::obj-35" : [ "button[118]", "button", 0 ],
-			"obj-5::obj-2::obj-156::obj-138" : [ "button[25]", "button[25]", 0 ],
-			"obj-6::obj-2::obj-244::obj-226" : [ "number[34]", "number[26]", 0 ],
-			"obj-7::obj-2::obj-243::obj-119" : [ "button[60]", "button[1]", 0 ],
-			"obj-8::obj-2::obj-243::obj-102" : [ "button[159]", "button", 0 ],
-			"obj-8::obj-2::obj-166" : [ "live.toggle[84]", "live.toggle", 0 ],
-			"obj-38::obj-40" : [ "number[67]", "number", 0 ],
-			"obj-9::obj-204" : [ "number[161]", "number[4]", 0 ],
-			"obj-6::obj-2::obj-174" : [ "multislider[13]", "multislider[2]", 0 ],
-			"obj-6::obj-2::obj-111" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-153" : [ "live.toggle[21]", "live.toggle", 0 ],
-			"obj-7::obj-2::obj-191" : [ "multislider[29]", "multislider", 0 ],
 			"obj-9::obj-2::obj-1::obj-39" : [ "number[169]", "number", 0 ],
-			"obj-9::obj-2::obj-115" : [ "multislider[36]", "multislider[2]", 0 ],
+			"obj-9::obj-2::obj-200" : [ "number[114]", "number[19]", 0 ],
+			"obj-9::obj-2::obj-201" : [ "number[174]", "number[19]", 0 ],
+			"obj-9::obj-2::obj-203" : [ "button[186]", "button[8]", 0 ],
+			"obj-9::obj-2::obj-204" : [ "number[178]", "number[4]", 0 ],
+			"obj-9::obj-2::obj-208" : [ "number[115]", "number[20]", 0 ],
+			"obj-9::obj-2::obj-214" : [ "number[180]", "number[7]", 0 ],
+			"obj-9::obj-2::obj-217" : [ "number[175]", "number[7]", 0 ],
+			"obj-9::obj-2::obj-218" : [ "multislider[39]", "multislider", 0 ],
+			"obj-9::obj-2::obj-234" : [ "slider[9]", "slider", 0 ],
+			"obj-9::obj-2::obj-238" : [ "slider[8]", "slider[1]", 0 ],
+			"obj-9::obj-2::obj-241" : [ "multislider[38]", "multislider[7]", 0 ],
+			"obj-9::obj-2::obj-243::obj-102" : [ "button[170]", "button", 0 ],
+			"obj-9::obj-2::obj-243::obj-119" : [ "button[169]", "button[1]", 0 ],
+			"obj-9::obj-2::obj-243::obj-216" : [ "button[166]", "button[10]", 0 ],
+			"obj-9::obj-2::obj-243::obj-36" : [ "button[168]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-243::obj-60" : [ "button[167]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-244::obj-167" : [ "number[164]", "number[2]", 0 ],
+			"obj-9::obj-2::obj-244::obj-17" : [ "button[171]", "button[7]", 0 ],
+			"obj-9::obj-2::obj-244::obj-222" : [ "number[167]", "number[26]", 0 ],
+			"obj-9::obj-2::obj-244::obj-226" : [ "number[163]", "number[26]", 0 ],
+			"obj-9::obj-2::obj-244::obj-229" : [ "number[166]", "number[3]", 0 ],
+			"obj-9::obj-2::obj-244::obj-240" : [ "number[165]", "number[3]", 0 ],
+			"obj-9::obj-2::obj-247" : [ "multislider[34]", "multislider[8]", 0 ],
+			"obj-9::obj-2::obj-249" : [ "multislider[37]", "multislider[9]", 0 ],
+			"obj-9::obj-2::obj-251::obj-145" : [ "number[172]", "number[7]", 0 ],
+			"obj-9::obj-2::obj-251::obj-220" : [ "multislider[32]", "multislider[5]", 0 ],
+			"obj-9::obj-2::obj-251::obj-225" : [ "number[173]", "number[7]", 0 ],
+			"obj-9::obj-2::obj-26" : [ "number[179]", "number[1]", 0 ],
+			"obj-9::obj-2::obj-27" : [ "button[185]", "button[9]", 0 ],
+			"obj-9::obj-2::obj-37" : [ "live.toggle[34]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-39" : [ "live.toggle[28]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-6" : [ "live.toggle[32]", "live.toggle", 0 ],
+			"obj-9::obj-2::obj-8" : [ "button[184]", "button[16]", 0 ],
+			"obj-9::obj-2::obj-92" : [ "number[176]", "number[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-6::obj-2::obj-184" : 				{
-					"parameter_longname" : "live.toggle[13]"
-				}
-,
-				"obj-8::obj-2::obj-184" : 				{
-					"parameter_longname" : "live.toggle[81]"
-				}
-,
-				"obj-9::obj-2::obj-6" : 				{
-					"parameter_longname" : "live.toggle[32]"
-				}
-,
-				"obj-8::obj-2::obj-111" : 				{
-					"parameter_longname" : "live.toggle[25]"
-				}
-,
-				"obj-8::obj-2::obj-6" : 				{
-					"parameter_longname" : "live.toggle[80]"
-				}
-,
-				"obj-7::obj-2::obj-166" : 				{
-					"parameter_longname" : "live.toggle[16]"
-				}
-,
-				"obj-6::obj-2::obj-13" : 				{
-					"parameter_longname" : "live.toggle[15]"
-				}
-,
-				"obj-7::obj-2::obj-13" : 				{
-					"parameter_longname" : "live.toggle[24]"
-				}
-,
-				"obj-9::obj-2::obj-111" : 				{
-					"parameter_longname" : "live.toggle[30]"
-				}
-,
-				"obj-7::obj-2::obj-39" : 				{
-					"parameter_longname" : "live.toggle[17]"
-				}
-,
-				"obj-8::obj-2::obj-37" : 				{
-					"parameter_longname" : "live.toggle[83]"
-				}
-,
-				"obj-8::obj-2::obj-153" : 				{
-					"parameter_longname" : "live.toggle[79]"
-				}
-,
-				"obj-7::obj-2::obj-114" : 				{
-					"parameter_longname" : "live.toggle[20]"
-				}
-,
-				"obj-6::obj-2::obj-37" : 				{
-					"parameter_longname" : "live.toggle[77]"
-				}
-,
-				"obj-9::obj-2::obj-39" : 				{
-					"parameter_longname" : "live.toggle[28]"
-				}
-,
-				"obj-7::obj-2::obj-37" : 				{
-					"parameter_longname" : "live.toggle[23]"
-				}
-,
-				"obj-9::obj-2::obj-184" : 				{
-					"parameter_longname" : "live.toggle[33]"
-				}
-,
-				"obj-9::obj-2::obj-153" : 				{
-					"parameter_longname" : "live.toggle[29]"
-				}
-,
-				"obj-9::obj-2::obj-37" : 				{
-					"parameter_longname" : "live.toggle[34]"
-				}
-,
-				"obj-7::obj-2::obj-184" : 				{
-					"parameter_longname" : "live.toggle[19]"
-				}
-,
-				"obj-9::obj-2::obj-166" : 				{
-					"parameter_longname" : "live.toggle[36]"
+				"obj-6::obj-2::obj-111" : 				{
+					"parameter_longname" : "live.toggle[9]"
 				}
 ,
 				"obj-6::obj-2::obj-114" : 				{
 					"parameter_longname" : "live.toggle[11]"
 				}
 ,
-				"obj-8::obj-2::obj-13" : 				{
-					"parameter_longname" : "live.toggle[82]"
-				}
-,
-				"obj-8::obj-2::obj-114" : 				{
-					"parameter_longname" : "live.toggle[27]"
-				}
-,
-				"obj-6::obj-2::obj-39" : 				{
-					"parameter_longname" : "live.toggle[78]"
-				}
-,
-				"obj-7::obj-2::obj-111" : 				{
-					"parameter_longname" : "live.toggle[18]"
-				}
-,
-				"obj-8::obj-2::obj-39" : 				{
-					"parameter_longname" : "live.toggle[26]"
-				}
-,
-				"obj-9::obj-2::obj-114" : 				{
-					"parameter_longname" : "live.toggle[35]"
-				}
-,
-				"obj-6::obj-2::obj-166" : 				{
-					"parameter_longname" : "live.toggle[14]"
+				"obj-6::obj-2::obj-13" : 				{
+					"parameter_longname" : "live.toggle[15]"
 				}
 ,
 				"obj-6::obj-2::obj-153" : 				{
 					"parameter_longname" : "live.toggle[10]"
 				}
 ,
+				"obj-6::obj-2::obj-166" : 				{
+					"parameter_longname" : "live.toggle[14]"
+				}
+,
+				"obj-6::obj-2::obj-184" : 				{
+					"parameter_longname" : "live.toggle[13]"
+				}
+,
+				"obj-6::obj-2::obj-37" : 				{
+					"parameter_longname" : "live.toggle[77]"
+				}
+,
+				"obj-6::obj-2::obj-39" : 				{
+					"parameter_longname" : "live.toggle[78]"
+				}
+,
 				"obj-6::obj-2::obj-6" : 				{
 					"parameter_longname" : "live.toggle[12]"
 				}
 ,
-				"obj-9::obj-2::obj-13" : 				{
-					"parameter_longname" : "live.toggle[31]"
+				"obj-7::obj-2::obj-111" : 				{
+					"parameter_longname" : "live.toggle[18]"
+				}
+,
+				"obj-7::obj-2::obj-114" : 				{
+					"parameter_longname" : "live.toggle[20]"
+				}
+,
+				"obj-7::obj-2::obj-13" : 				{
+					"parameter_longname" : "live.toggle[24]"
+				}
+,
+				"obj-7::obj-2::obj-153" : 				{
+					"parameter_longname" : "live.toggle[21]"
+				}
+,
+				"obj-7::obj-2::obj-166" : 				{
+					"parameter_longname" : "live.toggle[16]"
+				}
+,
+				"obj-7::obj-2::obj-184" : 				{
+					"parameter_longname" : "live.toggle[19]"
+				}
+,
+				"obj-7::obj-2::obj-37" : 				{
+					"parameter_longname" : "live.toggle[23]"
+				}
+,
+				"obj-7::obj-2::obj-39" : 				{
+					"parameter_longname" : "live.toggle[17]"
 				}
 ,
 				"obj-7::obj-2::obj-6" : 				{
 					"parameter_longname" : "live.toggle[22]"
 				}
 ,
+				"obj-8::obj-2::obj-111" : 				{
+					"parameter_longname" : "live.toggle[25]"
+				}
+,
+				"obj-8::obj-2::obj-114" : 				{
+					"parameter_longname" : "live.toggle[27]"
+				}
+,
+				"obj-8::obj-2::obj-13" : 				{
+					"parameter_longname" : "live.toggle[82]"
+				}
+,
+				"obj-8::obj-2::obj-153" : 				{
+					"parameter_longname" : "live.toggle[79]"
+				}
+,
 				"obj-8::obj-2::obj-166" : 				{
 					"parameter_longname" : "live.toggle[84]"
 				}
 ,
-				"obj-6::obj-2::obj-111" : 				{
-					"parameter_longname" : "live.toggle[9]"
+				"obj-8::obj-2::obj-184" : 				{
+					"parameter_longname" : "live.toggle[81]"
 				}
 ,
-				"obj-7::obj-2::obj-153" : 				{
-					"parameter_longname" : "live.toggle[21]"
+				"obj-8::obj-2::obj-37" : 				{
+					"parameter_longname" : "live.toggle[83]"
+				}
+,
+				"obj-8::obj-2::obj-39" : 				{
+					"parameter_longname" : "live.toggle[26]"
+				}
+,
+				"obj-8::obj-2::obj-6" : 				{
+					"parameter_longname" : "live.toggle[80]"
+				}
+,
+				"obj-9::obj-2::obj-111" : 				{
+					"parameter_longname" : "live.toggle[30]"
+				}
+,
+				"obj-9::obj-2::obj-114" : 				{
+					"parameter_longname" : "live.toggle[35]"
+				}
+,
+				"obj-9::obj-2::obj-13" : 				{
+					"parameter_longname" : "live.toggle[31]"
+				}
+,
+				"obj-9::obj-2::obj-153" : 				{
+					"parameter_longname" : "live.toggle[29]"
+				}
+,
+				"obj-9::obj-2::obj-166" : 				{
+					"parameter_longname" : "live.toggle[36]"
+				}
+,
+				"obj-9::obj-2::obj-184" : 				{
+					"parameter_longname" : "live.toggle[33]"
+				}
+,
+				"obj-9::obj-2::obj-37" : 				{
+					"parameter_longname" : "live.toggle[34]"
+				}
+,
+				"obj-9::obj-2::obj-39" : 				{
+					"parameter_longname" : "live.toggle[28]"
+				}
+,
+				"obj-9::obj-2::obj-6" : 				{
+					"parameter_longname" : "live.toggle[32]"
 				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Plattegrond-Stadswandelpark.jpg",
-				"bootpath" : "~/Dropbox/SLMP-patch/Patches/materiaal",
-				"patcherrelativepath" : "../../../../../../../../../Dropbox/SLMP-patch/Patches/materiaal",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "SYL - LAMPs-bpatcher.maxpat",
-				"bootpath" : "~/Documents/5. Studio Philip Ross/Projecten voor derden/Glow2021/* Light Sketching/GitHub clone/GLOW2021-Sketch-Your-Light/MAX/Project",
+				"bootpath" : "~/Desktop/GLOW2021-Sketch-Your-Light/MAX/Project",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5551,30 +5570,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "contour-voor-patch-onboven.png",
-				"bootpath" : "~/Dropbox/SLMP-patch/Patches/materiaal",
-				"patcherrelativepath" : "../../../../../../../../../Dropbox/SLMP-patch/Patches/materiaal",
-				"type" : "PNG",
-				"implicit" : 1
+				"name" : "sadam.udpReceiver.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "contour-voor-patch.png",
-				"bootpath" : "~/Dropbox/SLMP-patch/Patches/materiaal",
-				"patcherrelativepath" : "../../../../../../../../../Dropbox/SLMP-patch/Patches/materiaal",
-				"type" : "PNG",
-				"implicit" : 1
+				"name" : "sadam.udpSender.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "sadam.udpReceiver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sadam.udpSender.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mira.multitouch.mxo",
-				"type" : "iLaX"
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
